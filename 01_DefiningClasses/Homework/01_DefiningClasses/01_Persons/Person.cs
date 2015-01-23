@@ -60,8 +60,8 @@ public class Person
 
     public override string ToString()
     {
-        return string.Format("Person name: {0}; Person age: {1}; Email: {2}", this.name, this.age, 
-            this.email ?? "Not specified" );
+        return string.Format("Person name: {0}; Person age: {1}; Email: {2}", this.Name, this.Age, 
+            this.Email ?? "Not specified" );
     }
 }
 

@@ -29,6 +29,17 @@ class Laptop
         this.Price = price;
     }
 
+    public Laptop(string model, string processor, int ram, string graphicsCard, string hdd, string screen, decimal price)
+    {
+        this.Model = model;
+        this.Processor = processor;
+        this.Ram = ram;
+        this.GraphicsCard = graphicsCard;
+        this.Hdd = hdd;
+        this.Screen = screen;
+        this.Price = price;
+    }
+
     public Laptop(string model, decimal price)
     {
         this.Model = model;
@@ -149,6 +160,66 @@ class Laptop
             Validators.AssertIsPositive(value, "price");
             this.price = value;
         }
+    }
+
+    public override string ToString()
+    {
+        StringBuilder laptopSpecs = new StringBuilder();
+
+        string header = String.Format("=== LAPTOP ===");
+        laptopSpecs.AppendLine(header);
+
+        string laptopModel = String.Format("=== model : {0}", this.Model);
+        laptopSpecs.AppendLine(laptopModel);
+
+        if (this.Manufacturer != null)
+        {
+            string laptopManufacturer = String.Format("=== manufacturer : {0}", this.Manufacturer);
+            laptopSpecs.AppendLine(laptopManufacturer);
+        }
+
+        if (this.Processor != null)
+        {
+            string laptopProcessor = String.Format("=== processor : {0}", this.Processor);
+            laptopSpecs.AppendLine(laptopProcessor);
+        }
+
+        if (this.Ram != 0)
+        {
+            string laptopRam = String.Format("=== ram : {0} GB", this.Ram);
+            laptopSpecs.AppendLine(laptopRam);
+        }
+
+        if (this.GraphicsCard != null)
+        {
+            string laptopGraphicsCard = String.Format("=== graphics card : {0}", this.GraphicsCard);
+            laptopSpecs.AppendLine(laptopGraphicsCard);
+        }
+
+        if (this.Hdd != null)
+        {
+            string laptopHdd = String.Format("=== hdd : {0}", this.Hdd);
+            laptopSpecs.AppendLine(laptopHdd);
+        }
+
+        if (this.Screen != null)
+        {
+            string laptopScreen = String.Format("=== screen : {0}", this.Screen);
+            laptopSpecs.AppendLine(laptopScreen);
+        }
+
+        if (this.BatteryInfo != null)
+        {
+            string laptopBatterySpecs = String.Format("=== battery : {0}", this.BatteryInfo.BatterySpecs);
+            laptopSpecs.AppendLine(laptopBatterySpecs);
+            string laptopBatteryLife = String.Format("=== battery life : {0}", this.BatteryInfo.BatteryLife);
+            laptopSpecs.AppendLine(laptopBatteryLife);
+        }
+
+        string laptopPrice = String.Format("=== price : {0}", this.Price);
+        laptopSpecs.AppendLine(laptopPrice);
+
+        return laptopSpecs.ToString().Trim();
     }
 }
 

@@ -27,7 +27,15 @@ class TestLaptopShop
                         "HP 250 G2",
                         699.00m
                     )
-            }; 
+            };
+
+            foreach (Laptop nb in laptopList)
+            {
+                Console.Write(nb);
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+            }
         }
     }
 
