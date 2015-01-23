@@ -16,10 +16,10 @@ public class Person
         this.Age = age;
         this.Email = email;
     }
+
     public Person(string name, int age)
+        : this(name, age, null)
     {
-        this.Name = name;
-        this.Age = age;
     }
 
     public string Email
@@ -27,9 +27,9 @@ public class Person
         get { return this.email; }
         set
         {
-            if (!value.Contains("@"))
+            if (!string.IsNullOrEmpty(value) && !value.Contains("@"))
             {
-                throw new ArgumentException("");
+                throw new ArgumentException("You should enter a valid email.");
             }
             this.email = value;
         }
@@ -46,7 +46,7 @@ public class Person
         get { return this.name; }
         set
         {
-            if (string.IsNullOrEmpty(value))
+            if (string.IsNullOrEmpty(value) || value.Trim() == "")
             {
                 throw new ArgumentException("The name should not be null or empty.");
             }
@@ -57,6 +57,11 @@ public class Person
             this.name = value;
         }
     }
-    
+
+    public override string ToString()
+    {
+        return string.Format("Person name: {0}; Person age: {1}; Email: {2}", this.name, this.age, 
+            this.email ?? "Not specified" );
+    }
 }
 
