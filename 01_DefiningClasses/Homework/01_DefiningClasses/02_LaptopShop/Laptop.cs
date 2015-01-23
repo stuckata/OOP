@@ -11,13 +11,12 @@ class Laptop
     private string processor;
     private int ram;
     private string graphicsCard;
-    private int hdd;
+    private string hdd;
     private string screen;
-    private string battery;
-    private float batteryLife;
+    private Battery batteryInfo;
     private decimal price;
 
-    public Laptop(string model, string manufacturer, string processor, int ram, string graphicsCard, int hdd, string screen, string battery, float batteryLife, decimal price)
+    public Laptop(string model, string manufacturer, string processor, int ram, string graphicsCard, string hdd, string screen, Battery batteryInfo, decimal price)
     {
         this.Model = model;
         this.Manufacturer = manufacturer;
@@ -26,8 +25,7 @@ class Laptop
         this.GraphicsCard = graphicsCard;
         this.Hdd = hdd;
         this.Screen = screen;
-        this.Battery = battery;
-        this.BatteryLife = batteryLife;
+        this.BatteryInfo = batteryInfo;
         this.Price = price;
     }
 
@@ -45,6 +43,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "model");
             this.model = value;
         }
     }
@@ -57,6 +56,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "manufacturer");
             this.manufacturer = value;
         }
     }
@@ -69,6 +69,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "processor");
             this.processor = value;
         }
     }
@@ -81,6 +82,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertIsPositive(value, "ram");
             this.ram = value;
         }
     }
@@ -93,11 +95,12 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "graphics card");
             this.graphicsCard = value;
         }
     }
 
-    public int Hdd
+    public string Hdd
     {
         get
         {
@@ -105,6 +108,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "hdd");
             this.hdd = value;
         }
     }
@@ -117,34 +121,23 @@ class Laptop
         }
         set
         {
+            Validators.AssertNotEmpty(value, "screen");
             this.screen = value;
         }
     }
 
-    public string Battery
+    public Battery BatteryInfo
     {
         get
         {
-            return this.battery;
+            return this.batteryInfo;
         }
         set
         {
-            this.battery = value;
+            this.batteryInfo = value;
         }
     }
-
-    public float BatteryLife
-    {
-        get
-        {
-            return this.batteryLife;
-        }
-        set
-        {
-            this.batteryLife = value;
-        }
-    }
-
+   
     public decimal Price
     {
         get
@@ -153,6 +146,7 @@ class Laptop
         }
         set
         {
+            Validators.AssertIsPositive(value, "price");
             this.price = value;
         }
     }
