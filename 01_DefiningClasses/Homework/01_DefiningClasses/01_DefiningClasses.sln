@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_LaptopShop", "02_LaptopS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_PcCatalog", "03_PcCatalog\03_PcCatalog.csproj", "{E7BC1EEC-2ACD-460D-9441-23E06DDBB267}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_SoftwareUniversityLearningSystem", "04_SoftwareUniversityLearningSystem\04_SoftwareUniversityLearningSystem.csproj", "{E7D3CE76-4FF7-43F9-B05C-EC842298D70A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E7BC1EEC-2ACD-460D-9441-23E06DDBB267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7BC1EEC-2ACD-460D-9441-23E06DDBB267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7BC1EEC-2ACD-460D-9441-23E06DDBB267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D3CE76-4FF7-43F9-B05C-EC842298D70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D3CE76-4FF7-43F9-B05C-EC842298D70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D3CE76-4FF7-43F9-B05C-EC842298D70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D3CE76-4FF7-43F9-B05C-EC842298D70A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
