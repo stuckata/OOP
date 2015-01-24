@@ -8,7 +8,6 @@ class Computer
 {
     private string name;
     private List<Component> components;
-    private decimal price;
 
     public Computer(string name, List<Component> components)
     {
@@ -38,14 +37,6 @@ class Computer
         set
         {
             this.components = value;
-        }
-    }
-
-    public decimal Price
-    {
-        get
-        {
-            return CalculatePrice();
         }
     }
 
@@ -89,7 +80,7 @@ class Computer
             result.AppendLine(separationLine);
         }
 
-        string computerPrice = String.Format("=== Total Price : ${0}", this.Price);
+        string computerPrice = String.Format("=== Total Price : ${0}", CalculatePrice());
         result.AppendLine(computerPrice);
         result.AppendLine(separationLine);
 
