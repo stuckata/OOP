@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04_SoftwareUniversityLearningSystem
 {
-    public class Program
+    public class DropoutStudent
     {
-        static void Main()
-        {
-        }
     }
 }
