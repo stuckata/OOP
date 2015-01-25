@@ -28,5 +28,11 @@ namespace _04_SoftwareUniversityLearningSystem
                 this.currentCourse = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}; Current Course: {1}",
+                base.ToString(), this.CurrentCourse);
+        }
     }
 }

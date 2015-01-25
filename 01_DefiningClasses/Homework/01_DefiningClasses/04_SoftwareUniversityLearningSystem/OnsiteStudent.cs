@@ -28,5 +28,10 @@ namespace _04_SoftwareUniversityLearningSystem
                 this.numberOfVisits = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}; Number of Visits: {1}", base.ToString(), this.CurrentCourse);
+        }
     }
 }

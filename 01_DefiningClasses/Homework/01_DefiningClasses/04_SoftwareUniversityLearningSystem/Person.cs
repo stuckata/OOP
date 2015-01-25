@@ -54,5 +54,11 @@ namespace _04_SoftwareUniversityLearningSystem
                 this.age = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("First Name: {0}; Last Name: {1}; Age: {2}", 
+                this.FirstName, this.LastName, this.Age);
+        }
     }
 }

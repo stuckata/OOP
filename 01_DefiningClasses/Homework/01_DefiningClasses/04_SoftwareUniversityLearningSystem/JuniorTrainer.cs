@@ -12,5 +12,10 @@ namespace _04_SoftwareUniversityLearningSystem
             : base(firstName, lastName, age)
         {
         }
+
+        public override string ToString()
+        {
+            return String.Format("Junior {0}", base.ToString());
+        }
     }
 }

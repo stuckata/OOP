@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _04_SoftwareUniversityLearningSystem
 {
-    public class OnlineStudent
+    public class OnlineStudent : CurrentSudent
     {
+        public OnlineStudent(string firstName, string lastName, int age, string studentNumber, string averageGrade,
+            string currentCourse)
+            : base(firstName, lastName, age, studentNumber, averageGrade, currentCourse)
+        {
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04_SoftwareUniversityLearningSystem
 {
-    public class Program
+    public class SULSTest
     {
         static void Main()
         {

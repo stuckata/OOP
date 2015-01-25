@@ -17,5 +17,10 @@ namespace _04_SoftwareUniversityLearningSystem
         {
             Console.WriteLine(courseName + " has been created");
         }
+
+        public override string ToString()
+        {
+            return String.Format("Trainer: {0}", base.ToString());
+        }
     }
 }

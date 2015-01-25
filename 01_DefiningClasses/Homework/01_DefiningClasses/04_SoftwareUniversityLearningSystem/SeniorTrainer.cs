@@ -17,5 +17,10 @@ namespace _04_SoftwareUniversityLearningSystem
         {
             return courseName + " has been deleted";
         }
+
+        public override string ToString()
+        {
+            return String.Format("Senior {0}", base.ToString());
+        }
     }
 }

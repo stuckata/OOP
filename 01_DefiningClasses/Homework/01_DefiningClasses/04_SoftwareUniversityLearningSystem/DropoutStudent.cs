@@ -31,8 +31,13 @@ namespace _04_SoftwareUniversityLearningSystem
 
         public string Reaply()
         {
-            return dropoutReason;
+            return ToString();
         }
 
+        public override string ToString()
+        {
+            return String.Format("{0}; Dropout Reason: {1}",
+                base.ToString(),this.DropoutReason);
+        }
     }
 }
