@@ -8,7 +8,7 @@ namespace _04_SoftwareUniversityLearningSystem
 {
     public class OnlineStudent : CurrentSudent
     {
-        public OnlineStudent(string firstName, string lastName, int age, string studentNumber, string averageGrade,
+        public OnlineStudent(string firstName, string lastName, int age, string studentNumber, decimal averageGrade,
             string currentCourse)
             : base(firstName, lastName, age, studentNumber, averageGrade, currentCourse)
         {
@@ -16,7 +16,7 @@ namespace _04_SoftwareUniversityLearningSystem
 
         public override string ToString()
         {
-            return base.ToString();
+            return String.Format("Online " + base.ToString());
         }
     }
 }

@@ -10,7 +10,7 @@ namespace _04_SoftwareUniversityLearningSystem
     {
         private string dropoutReason;
 
-        public DropoutStudent(string firstName, string lastName, int age, string studentNumber, string averageGrade, 
+        public DropoutStudent(string firstName, string lastName, int age, string studentNumber, decimal averageGrade, 
             string dropoutReason)
                 : base(firstName, lastName, age, studentNumber, averageGrade)
         {
@@ -36,7 +36,7 @@ namespace _04_SoftwareUniversityLearningSystem
 
         public override string ToString()
         {
-            return String.Format("{0}; Dropout Reason: {1}",
+            return String.Format("Dropout {0}; Dropout Reason: {1}",
                 base.ToString(),this.DropoutReason);
         }
     }

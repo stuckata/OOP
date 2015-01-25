@@ -9,9 +9,9 @@ namespace _04_SoftwareUniversityLearningSystem
     public class Student : Person
     {
         private string studentNumber;
-        private string averageGrade;
+        private decimal averageGrade;
 
-        public Student(string firstName, string lastName, int age, string studentNumber, string averageGrade)
+        public Student(string firstName, string lastName, int age, string studentNumber, decimal averageGrade)
             : base(firstName, lastName, age)
         {
             this.StudentNumber = studentNumber;
@@ -30,7 +30,7 @@ namespace _04_SoftwareUniversityLearningSystem
             }
         }
 
-        public string AverageGrade
+        public decimal AverageGrade
         {
             get
             {

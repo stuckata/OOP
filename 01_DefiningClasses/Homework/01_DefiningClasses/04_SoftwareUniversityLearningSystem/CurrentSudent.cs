@@ -10,7 +10,7 @@ namespace _04_SoftwareUniversityLearningSystem
     {
         private string currentCourse;
 
-        public CurrentSudent(string firstName, string lastName, int age, string studentNumber, string averageGrade, 
+        public CurrentSudent(string firstName, string lastName, int age, string studentNumber, decimal averageGrade, 
             string currentCourse)
             : base(firstName, lastName, age, studentNumber, averageGrade)
         {

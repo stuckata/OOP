@@ -62,9 +62,9 @@ class Computer
         result.AppendLine(computerName);
         result.AppendLine(separationLine);
 
-        List<Component> orderedByPriceComponents = this.Components.OrderBy(c => c.Price).ToList();
+        List<Component> componentsOrderedByPrice = this.Components.OrderBy(c => c.Price).ToList();
 
-        foreach (var component in orderedByPriceComponents)
+        foreach (var component in componentsOrderedByPrice)
         {
             string componentName = String.Format("=== Component name : {0}", component.Name);
             result.AppendLine(componentName);

@@ -8,14 +8,14 @@ namespace _04_SoftwareUniversityLearningSystem
 {
     public class GraduateSudent : Student
     {
-        public GraduateSudent(string firstName, string lastName, int age, string studentNumber, string averageGrade)
+        public GraduateSudent(string firstName, string lastName, int age, string studentNumber, decimal averageGrade)
             : base(firstName, lastName, age, studentNumber, averageGrade)
         {
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return String.Format("Graduate " + base.ToString());
         }
     }
 }

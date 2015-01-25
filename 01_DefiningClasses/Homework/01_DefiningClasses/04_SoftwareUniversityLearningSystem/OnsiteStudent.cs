@@ -10,7 +10,7 @@ namespace _04_SoftwareUniversityLearningSystem
     {
         private int numberOfVisits;
 
-        public OnsiteStudent(string firstName, string lastName, int age, string studentNumber, string averageGrade,
+        public OnsiteStudent(string firstName, string lastName, int age, string studentNumber, decimal averageGrade,
             string currentCourse, int numberOfVisits)
             : base(firstName, lastName, age, studentNumber, averageGrade, currentCourse)
         {
@@ -31,7 +31,7 @@ namespace _04_SoftwareUniversityLearningSystem
 
         public override string ToString()
         {
-            return String.Format("{0}; Number of Visits: {1}", base.ToString(), this.CurrentCourse);
+            return String.Format("Onsite {0}; Number of Visits: {1}", base.ToString(), this.CurrentCourse);
         }
     }
 }
