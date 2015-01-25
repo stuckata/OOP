@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace _04_SoftwareUniversityLearningSystem
 {
-    public class OnsiteStudent
+    public class OnsiteStudent : CurrentSudent
     {
+        private int numberOfVisits;
+
+        public OnsiteStudent(string firstName, string lastName, int age, string studentNumber, string averageGrade,
+            string currentCourse, int numberOfVisits)
+            : base(firstName, lastName, age, studentNumber, averageGrade, currentCourse)
+        {
+            this.NumberOfVisits = numberOfVisits;
+        }
+
+        public int NumberOfVisits
+        {
+            get
+            {
+                return this.numberOfVisits;
+            }
+            set
+            {
+                this.numberOfVisits = value;
+            }
+        }
     }
 }

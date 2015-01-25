@@ -8,25 +8,25 @@ namespace _04_SoftwareUniversityLearningSystem
 {
     public class Student : Person
     {
-        private string currentCurse;
+        private string studentNumber;
         private string averageGrade;
 
-        public Student(string firstName, string lastName, int age, string currentCurse, string averageGrade)
+        public Student(string firstName, string lastName, int age, string studentNumber, string averageGrade)
             : base(firstName, lastName, age)
         {
-            this.CurrentCurse = currentCurse;
+            this.StudentNumber = studentNumber;
             this.AverageGrade = averageGrade;
         }
 
-        public string CurrentCurse
+        public string StudentNumber
         {
             get
             {
-                return this.currentCurse;
+                return this.studentNumber;
             }
             set
             {
-                this.currentCurse = value;
+                this.studentNumber = value;
             }
         }
 

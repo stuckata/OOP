@@ -12,5 +12,10 @@ namespace _04_SoftwareUniversityLearningSystem
             : base(firstName, lastName, age)
         {
         }
+
+        public string DeleteCourse(string courseName)
+        {
+            return courseName + " has been deleted";
+        }
     }
 }
