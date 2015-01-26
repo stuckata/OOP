@@ -8,19 +8,19 @@ namespace _01_Point3D
 {
     public class Point3D
     {
-        private float coordinateX;
-        private float coordinateY;
-        private float coordinateZ;
+        private double coordinateX;
+        private double coordinateY;
+        private double coordinateZ;
         private static readonly Point3D StartingPoint = new Point3D( 0, 0, 0 );
 
-        public Point3D(float coordinateX, float coordinateY, float coordinateZ)
+        public Point3D(double coordinateX, double coordinateY, double coordinateZ)
         {
             this.CoordinateX = coordinateX;
             this.CoordinateY = coordinateY;
             this.CoordinateZ = coordinateZ;
         }
 
-        public float CoordinateX
+        public double CoordinateX
         {
             get
             {
@@ -32,7 +32,7 @@ namespace _01_Point3D
             }
         }
 
-        public float CoordinateY
+        public double CoordinateY
         {
             get
             {
@@ -44,7 +44,7 @@ namespace _01_Point3D
             }
         }
 
-        public float CoordinateZ
+        public double CoordinateZ
         {
             get
             {
@@ -59,12 +59,16 @@ namespace _01_Point3D
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
+            string separator = "==============================================================";
+            result.AppendLine(separator);
             string startingPointCoordinates = String.Format(
                 "The Starting Point of 3D coordinate system is: Center({0}, {1}, {2})", 
                 StartingPoint.CoordinateX, StartingPoint.CoordinateY, StartingPoint.CoordinateZ);
             result.AppendLine(startingPointCoordinates);
+            result.AppendLine(separator);
             string point3DCoordinates = String.Format("Point3D({0}, {1}, {2})", 
                 this.CoordinateX, this.CoordinateY, this.CoordinateZ);
+            result.AppendLine(point3DCoordinates);
             return result.ToString();
         }
     }
