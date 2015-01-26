@@ -7,7 +7,7 @@ using _01_Point3D;
 
 namespace _02_DistanceCalculator
 {
-    class DistanceCalculatorTest
+    public class DistanceCalculatorTest
     {
         static void Main()
         {

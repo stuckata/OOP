@@ -23,7 +23,6 @@ namespace _01_Point3D
             {
                 Console.WriteLine(point);
                 Console.WriteLine();
-                Console.WriteLine();
             }
         }
     }
