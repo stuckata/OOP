@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,26 @@ namespace _03_Paths
 {
     public static class Storage
     {
-        public static void SavePathToATextFile(string path, string fileLocation, string fileName)
+        public static void SavePointsPathToTxtFile(string path, string fileLocation, string fileName)
         {
-            System.IO.File.WriteAllText(@"D:\Documents\OOP\02_StaticMembersAndNamespaces\Homework\StaticMembersAndNamespaces\03_Paths\TxtStorageFiles\WriteText.txt", path);
+            System.IO.File.WriteAllText(@"" + fileLocation + "\\" + fileName + ".txt", path);
         }
 
-
+        public static void ReadPointsPathFromTxtFile(string fileLocation, string fileName)
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader(fileLocation + "\\" + fileName + ".txt"))
+                {
+                    String line = sr.ReadToEnd();
+                    Console.WriteLine(line);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+        }
     }
 }

@@ -1,0 +1,1 @@
+﻿You have to open the folder in File Explorer to see the txt file with generated path!
