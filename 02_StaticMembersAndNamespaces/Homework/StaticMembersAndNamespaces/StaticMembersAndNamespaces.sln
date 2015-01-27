@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Paths", "03_Paths\03_Pat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_HtmlDispatcher", "04_HtmlDispatcher\04_HtmlDispatcher.csproj", "{F1B05A5B-3953-4DED-AF89-D0A60E7E7C30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Namespaces", "06_Namespaces\06_Namespaces.csproj", "{7AD0BC8C-1CE2-4B39-A5EF-367FED08E63E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_BitArray", "05_BitArray\05_BitArray.csproj", "{F8BEF2AA-157A-49D8-B350-F75A2624050F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{F1B05A5B-3953-4DED-AF89-D0A60E7E7C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B05A5B-3953-4DED-AF89-D0A60E7E7C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B05A5B-3953-4DED-AF89-D0A60E7E7C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD0BC8C-1CE2-4B39-A5EF-367FED08E63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD0BC8C-1CE2-4B39-A5EF-367FED08E63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD0BC8C-1CE2-4B39-A5EF-367FED08E63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD0BC8C-1CE2-4B39-A5EF-367FED08E63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BEF2AA-157A-49D8-B350-F75A2624050F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BEF2AA-157A-49D8-B350-F75A2624050F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BEF2AA-157A-49D8-B350-F75A2624050F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BEF2AA-157A-49D8-B350-F75A2624050F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

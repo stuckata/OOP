@@ -37,8 +37,13 @@ namespace _04_HtmlDispatcher
             return content;
         }
 
-        public static string operator*(int n)
+        //public static string operator*(int n)
+        //{
+        //}
+
+        public override string ToString()
         {
+            return base.ToString();
         }
     }
 }
