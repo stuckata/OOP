@@ -9,6 +9,7 @@ namespace _04_HtmlDispatcher
     public class ElementBuilder
     {
         private string elementName;
+        private Dictionary<string, string> attributes;
 
         public ElementBuilder(string elementName)
         {
@@ -27,9 +28,9 @@ namespace _04_HtmlDispatcher
             }
         }
 
-        public string AddAtribute(string attribute, string value)
+        public void AddAtribute(string attribute, string value)
         {
-            return String.Format(" {0}=\"{1}\"", attribute, value);
+            attributes.Add(attribute, value);
         }
 
         public string AddContent(string content)
@@ -37,13 +38,19 @@ namespace _04_HtmlDispatcher
             return content;
         }
 
-        //public static string operator*(int n)
-        //{
-        //}
+        public static string operator *(ElementBuilder element, int n)
+        {
+            string result = "";
+            for (int i = 0; i < n; i++)
+			{
+                result += element.ToString();
+			}
+            return result;
+        }
 
         public override string ToString()
         {
-            return base.ToString();
+            return String.Format("");
         }
     }
 }
