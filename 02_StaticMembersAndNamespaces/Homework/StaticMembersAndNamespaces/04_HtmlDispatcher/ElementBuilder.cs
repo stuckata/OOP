@@ -9,7 +9,8 @@ namespace _04_HtmlDispatcher
     public class ElementBuilder
     {
         private string elementName;
-        private Dictionary<string, string> attributes;
+        private Dictionary<string, string> attributes = new Dictionary<string,string>();
+        private string content;
 
         public ElementBuilder(string elementName)
         {
@@ -28,14 +29,14 @@ namespace _04_HtmlDispatcher
             }
         }
 
-        public void AddAtribute(string attribute, string value)
+        public void AddAttribute(string attribute, string value)
         {
-            attributes.Add(attribute, value);
+            this.attributes.Add(attribute, value);
         }
 
-        public string AddContent(string content)
+        public void AddContent(string content)
         {
-            return content;
+            this.content = content;
         }
 
         public static string operator *(ElementBuilder element, int n)
@@ -50,7 +51,26 @@ namespace _04_HtmlDispatcher
 
         public override string ToString()
         {
-            return String.Format("");
+            StringBuilder resultStr = new StringBuilder();
+            string elementStartStr = "<" + this.ElementName;
+            string elementEndStr = "</" + this.ElementName + ">";
+            string elementAttributesAndValues = "";
+            string contentStr = this.content;
+
+            resultStr.Append(elementStartStr);
+
+            foreach (var attribute in this.attributes)
+            {
+                elementAttributesAndValues += " ";
+                elementAttributesAndValues += String.Format("{0}=\"{1}\"", attribute.Key, attribute.Value);
+            }
+
+            elementAttributesAndValues += ">";
+            resultStr.Append(elementAttributesAndValues);
+            resultStr.Append(contentStr);
+            resultStr.Append(elementEndStr);
+             
+            return resultStr.ToString();
         }
     }
 }
