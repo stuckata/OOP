@@ -68,8 +68,10 @@ namespace _04_HtmlDispatcher
             elementAttributesAndValues += ">";
             resultStr.Append(elementAttributesAndValues);
             resultStr.Append(contentStr);
-            resultStr.Append(elementEndStr);
-             
+            if (this.ElementName != "img" && this.ElementName != "input")
+            {
+                resultStr.Append(elementEndStr);
+            }
             return resultStr.ToString();
         }
     }
