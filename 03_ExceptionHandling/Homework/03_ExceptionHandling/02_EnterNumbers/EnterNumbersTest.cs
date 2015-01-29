@@ -4,14 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01_SquareRoot
+namespace _02_EnterNumbers
 {
-    class SquareRootTest
+    class EnterNumbersTest
     {
         static void Main(string[] args)
         {
-            SquareRoot number = new SquareRoot("4");
-            Console.WriteLine(number);
         }
     }
 }
