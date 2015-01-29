@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace _02_EnterNumbers
 {
-    class EnterNumbersTest
+    class NotInDefinedRangeException : Exception
     {
-        static void Main(string[] args)
+        public NotInDefinedRangeException(string message)
+            : base(message)
         {
         }
     }

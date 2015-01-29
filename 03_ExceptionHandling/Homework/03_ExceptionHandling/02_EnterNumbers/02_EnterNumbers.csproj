@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnterNumbersTest.cs" />
-    <Compile Include="Number.cs" />
+    <Compile Include="EnterNumbers.cs" />
+    <Compile Include="NotBiggerThanPreviousNumberException.cs" />
+    <Compile Include="NotInDefinedRangeException.cs" />
+    <Compile Include="PrintTextFields.cs" />
+    <Compile Include="Processes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
