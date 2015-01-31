@@ -31,8 +31,8 @@ namespace _02_HumanStudentAndWorker
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            string separator = "==============================================================";
-            string studentData = String.Format("Student: {0}; {1}", base.ToString(), this.FacultyNumber);
+            string separator = "===============================================================================";
+            string studentData = String.Format("Student: {0}; Faculty Number: {1}", base.ToString(), this.FacultyNumber);
             result.AppendLine(studentData);
             result.AppendLine(separator);
             return result.ToString();

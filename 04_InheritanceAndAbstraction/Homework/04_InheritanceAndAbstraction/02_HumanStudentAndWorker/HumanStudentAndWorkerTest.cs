@@ -10,6 +10,8 @@ namespace _02_HumanStudentAndWorker
     {
         static void Main(string[] args)
         {
+            string separator = "===============================================================================";
+
             IList<Student> students = new List<Student>()
             {
                 new Student("Kacko", "Strugarev", "ADG874234H"),
@@ -37,6 +39,28 @@ namespace _02_HumanStudentAndWorker
                 new Worker("Mitko", "Mitev", 120m, 40m),
                 new Worker("Jeanne", "dArc", 390m, 40m),
             };
+
+            IList<Student> sortedByFacultyNumberStudents = students.OrderBy(s => s.FacultyNumber).ToList();
+            IList<Worker> sortedByMoneyPerHourWorkers = workers.OrderByDescending(w => w.PaymentPerHour).ToList();
+
+            Console.WriteLine("SORTED STUDENTS");
+            Console.WriteLine(separator);
+
+            foreach (var student in sortedByFacultyNumberStudents)
+            {
+                Console.Write(student);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("SORTED WORKERS");
+            Console.WriteLine(separator);
+
+            foreach (var worker in sortedByMoneyPerHourWorkers)
+            {
+                Console.Write(worker);
+            }
         }
     }
 }

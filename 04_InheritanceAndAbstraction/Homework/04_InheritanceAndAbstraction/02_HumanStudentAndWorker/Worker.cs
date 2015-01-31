@@ -10,12 +10,14 @@ namespace _02_HumanStudentAndWorker
     {
         private decimal weekSalary;
         private decimal workHoursPerDay;
+        public decimal PaymentPerHour;
 
         public Worker(string firstName, string lastName, decimal weekSalary, decimal workHoursPerDay)
             : base(firstName, lastName)
         {
             this.WeekSalary = weekSalary;
             this.WorkHoursPerDay = workHoursPerDay;
+            this.PaymentPerHour = MoneyPerHour(this.WeekSalary, this.WorkHoursPerDay);
         }
 
         public decimal WeekSalary
@@ -51,9 +53,8 @@ namespace _02_HumanStudentAndWorker
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            string separator = "==============================================================";
-            string workerData = String.Format("Worker: {0}; {1 : #,##}", base.ToString(), 
-                MoneyPerHour(this.WeekSalary, this.WorkHoursPerDay));
+            string separator = "===============================================================================";
+            string workerData = String.Format("Worker: {0}; Payment Per Hour: ${1}", base.ToString(), this.PaymentPerHour);
             result.AppendLine(workerData);
             result.AppendLine(separator);
             return result.ToString();
