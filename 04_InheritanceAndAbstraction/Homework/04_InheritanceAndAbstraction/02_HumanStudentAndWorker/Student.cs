@@ -8,24 +8,34 @@ namespace _02_HumanStudentAndWorker
 {
     class Student : Human
     {
-        private string faultyNumber;
+        private string facultyNumber;
 
-        public Student(string firstName, string lastName, string faultyNumber)
+        public Student(string firstName, string lastName, string facultyNumber)
             : base(firstName, lastName)
         {
-            this.FaultyNumber = faultyNumber;
+            this.FacultyNumber = facultyNumber;
         }
 
-        public string FaultyNumber
+        public string FacultyNumber
         {
             get
             {
-                return this.faultyNumber;
+                return this.facultyNumber;
             }
             set
             {
-                this.faultyNumber = value;
+                this.facultyNumber = value;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            string separator = "==============================================================";
+            string studentData = String.Format("Student: {0}; {1}", base.ToString(), this.FacultyNumber);
+            result.AppendLine(studentData);
+            result.AppendLine(separator);
+            return result.ToString();
         }
     }
 }

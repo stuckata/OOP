@@ -40,5 +40,10 @@ namespace _02_HumanStudentAndWorker
                 this.lastName = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("First Name: {0}; Last Name: {1}", this.FirstName, this.LastName);
+        }
     }
 }
