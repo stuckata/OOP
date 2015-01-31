@@ -12,7 +12,7 @@ namespace _02_HumanStudentAndWorker
         {
             string separator = "===============================================================================";
 
-            IList<Student> students = new List<Student>()
+            List<Student> students = new List<Student>()
             {
                 new Student("Kacko", "Strugarev", "ADG874234H"),
                 new Student("Bater", "Brumkov", "ERG347584J"),
@@ -26,7 +26,7 @@ namespace _02_HumanStudentAndWorker
                 new Student("Sauron", "Thenameless", "1452TORULL"),
             };
 
-            IList<Worker> workers = new List<Worker>()
+            List<Worker> workers = new List<Worker>()
             {
                 new Worker("Gazo", "Bazov", 1000m, 20m),
                 new Worker("Brymbar", "Brymbarov", 200m, 40m),
@@ -40,8 +40,8 @@ namespace _02_HumanStudentAndWorker
                 new Worker("Jeanne", "dArc", 390m, 40m),
             };
 
-            IList<Student> sortedByFacultyNumberStudents = students.OrderBy(s => s.FacultyNumber).ToList();
-            IList<Worker> sortedByMoneyPerHourWorkers = workers.OrderByDescending(w => w.PaymentPerHour).ToList();
+            List<Student> sortedByFacultyNumberStudents = students.OrderBy(s => s.FacultyNumber).ToList();
+            List<Worker> sortedByMoneyPerHourWorkers = workers.OrderByDescending(w => w.PaymentPerHour).ToList();
 
             Console.WriteLine("SORTED STUDENTS");
             Console.WriteLine(separator);
@@ -53,13 +53,27 @@ namespace _02_HumanStudentAndWorker
 
             Console.WriteLine();
             Console.WriteLine();
-
             Console.WriteLine("SORTED WORKERS");
             Console.WriteLine(separator);
 
             foreach (var worker in sortedByMoneyPerHourWorkers)
             {
                 Console.Write(worker);
+            }
+
+            List<Human> people = new List<Human>();
+            people.AddRange(students);
+            people.AddRange(workers);
+            List<Human> peopleSortedByNames = people.OrderBy(p => p.FirstName).ThenBy(p => p.LastName).ToList();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("SORTED WORKERS AND STUDENTS");
+            Console.WriteLine(separator);
+
+            foreach (var person in peopleSortedByNames)
+            {
+                Console.Write(person);
             }
         }
     }

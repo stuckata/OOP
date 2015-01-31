@@ -10,7 +10,7 @@ namespace _02_HumanStudentAndWorker
     {
         private decimal weekSalary;
         private decimal workHoursPerDay;
-        public decimal PaymentPerHour;
+        public readonly decimal PaymentPerHour;
 
         public Worker(string firstName, string lastName, decimal weekSalary, decimal workHoursPerDay)
             : base(firstName, lastName)
