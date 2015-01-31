@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace _03_Animals
 {
-    class Kitten
+    class Kitten : Cat
     {
+        private const GenderType.Gender GENDER = GenderType.Gender.Female;
+
+        public Kitten(string name, int age)
+            : base(name, age)
+        {
+
+        }
     }
 }

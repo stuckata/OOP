@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _03_Animals
 {
-    class Cat
+    abstract class Cat : Animal, ISound
     {
+        public Cat(string name, int age)
+            : base(name, age)
+        {
+
+        }
+
+        public void ProduceSound()
+        {
+            Console.WriteLine("Miauuuuuuuu!");
+        }
     }
 }

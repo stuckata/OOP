@@ -19,6 +19,12 @@ namespace _03_Animals
             this.Gender = gender;
         }
 
+        public Animal(string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;
+        }
+
         public string Name
         {
             get

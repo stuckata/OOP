@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace _03_Animals
 {
-    public class GenderType
+    interface ISound
     {
-        public enum Gender
-        {
-            Male,
-            Female
-        };
+        void ProduceSound();
     }
 }
