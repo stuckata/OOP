@@ -10,6 +10,21 @@ namespace _03_Animals
     {
         static void Main(string[] args)
         {
+            List<Animal> animals = new List<Animal>
+            {
+                new Dog("Pirata", 6, GenderType.Gender.Male),
+                new Dog("Sharo", 12, GenderType.Gender.Male),
+                new Dog("Mara", 4, GenderType.Gender.Female),
+                new Frog("Kichka", 3, GenderType.Gender.Female),
+                new Frog("Myrla", 1, GenderType.Gender.Female),
+                new Frog("Kikoran", 2, GenderType.Gender.Male),
+                new Kitten("Mimka", 7),
+                new Kitten("Klera", 1),
+                new Kitten("Zlatka", 2),
+                new Tomcat("Tom", 7),
+                new Tomcat("Burningrom", 10),
+                new Tomcat("Floppy", 3),
+            };
         }
     }
 }

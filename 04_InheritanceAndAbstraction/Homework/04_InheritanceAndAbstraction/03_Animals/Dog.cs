@@ -8,7 +8,7 @@ namespace _03_Animals
 {
     class Dog : Animal, ISound
     {
-        public Dog(string name, int age, GenderType gender)
+        public Dog(string name, int age, GenderType.Gender gender)
             : base(name, age, gender)
         {
 
@@ -17,6 +17,11 @@ namespace _03_Animals
         public void ProduceSound()
         {
             Console.WriteLine("Bau-bau!");
+        }
+
+        public override string ToString()
+        {
+            return String.Format("DOG: {0}; Gender: {1}", base.ToString(), this.Gender);
         }
     }
 }

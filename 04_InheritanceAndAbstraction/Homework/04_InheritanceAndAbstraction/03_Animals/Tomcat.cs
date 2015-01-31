@@ -15,5 +15,10 @@ namespace _03_Animals
         {
 
         }
+
+        public override string ToString()
+        {
+            return String.Format("TOMCAT: {0}; Gender: {1}", base.ToString(), GENDER);
+        }
     }
 }

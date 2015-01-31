@@ -8,7 +8,7 @@ namespace _03_Animals
 {
     class Frog : Animal, ISound
     {
-        public Frog(string name, int age, GenderType gender)
+        public Frog(string name, int age, GenderType.Gender gender)
             : base(name, age, gender)
         {
 
@@ -17,6 +17,11 @@ namespace _03_Animals
         public void ProduceSound()
         {
             Console.WriteLine("Kva-kva!");
+        }
+
+        public override string ToString()
+        {
+            return String.Format("FROG: {0}; Gender: {1}", base.ToString(), this.Gender);
         }
     }
 }

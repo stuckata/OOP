@@ -10,9 +10,9 @@ namespace _03_Animals
     {
         private string name;
         private int age;
-        private GenderType gender;
+        private GenderType.Gender gender;
 
-        public Animal(string name, int age, GenderType gender)
+        public Animal(string name, int age, GenderType.Gender gender)
         {
             this.Name = name;
             this.Age = age;
@@ -49,7 +49,7 @@ namespace _03_Animals
             }
         }
 
-        public GenderType Gender
+        public GenderType.Gender Gender
         {
             get
             {
@@ -59,6 +59,11 @@ namespace _03_Animals
             {
                 this.gender = value;
             }
+        }
+
+        public override string ToString()
+        {
+            return String.Format("Name: {}; Age: {}", this.Name, this.Age);
         }
     }
 }
