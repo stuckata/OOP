@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_Animals
 {
-    class Dog : Animal, ISound
+    class Dog : Animal
     {
         public Dog(string name, int age, GenderType.Gender gender)
             : base(name, age, gender)
@@ -14,7 +14,7 @@ namespace _03_Animals
 
         }
 
-        public void ProduceSound()
+        public override void ProduceSound()
         {
             Console.WriteLine("Bau-bau!");
         }

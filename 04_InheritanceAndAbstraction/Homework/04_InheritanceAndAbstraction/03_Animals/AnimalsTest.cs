@@ -10,6 +10,8 @@ namespace _03_Animals
     {
         static void Main(string[] args)
         {
+            string separator = "===============================================================================";
+
             List<Animal> animals = new List<Animal>
             {
                 new Dog("Pirata", 6, GenderType.Gender.Male),
@@ -25,6 +27,15 @@ namespace _03_Animals
                 new Tomcat("Burningrom", 10),
                 new Tomcat("Floppy", 3),
             };
+
+            Console.WriteLine(separator);
+
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal);
+                animal.ProduceSound();
+                Console.WriteLine(separator);
+            }
         }
     }
 }

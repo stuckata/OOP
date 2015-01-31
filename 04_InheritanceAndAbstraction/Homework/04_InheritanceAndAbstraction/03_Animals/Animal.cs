@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_Animals
 {
-    abstract class Animal
+    abstract class Animal : ISound
     {
         private string name;
         private int age;
@@ -61,9 +61,11 @@ namespace _03_Animals
             }
         }
 
+        public abstract void ProduceSound();
+
         public override string ToString()
         {
-            return String.Format("Name: {}; Age: {}", this.Name, this.Age);
+            return String.Format("Name: {0}; Age: {1}", this.Name, this.Age);
         }
     }
 }
