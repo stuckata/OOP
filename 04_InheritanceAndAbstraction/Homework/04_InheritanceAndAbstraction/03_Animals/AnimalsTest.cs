@@ -36,6 +36,16 @@ namespace _03_Animals
                 animal.ProduceSound();
                 Console.WriteLine(separator);
             }
+
+            double dogsAverageAge = animals.FindAll(a => a.GetType() == typeof(Dog)).Average(a => a.Age);
+            double frogsAverageAge = animals.FindAll(a => a.GetType() == typeof(Frog)).Average(a => a.Age);
+            double kittensAverageAge = animals.FindAll(a => a.GetType() == typeof(Kitten)).Average(a => a.Age);
+            double tomcatsAverageAge = animals.FindAll(a => a.GetType() == typeof(Tomcat)).Average(a => a.Age);
+
+            Console.WriteLine("Dogs average age is: {0}", dogsAverageAge);
+            Console.WriteLine("Frogs average age is: {0}", frogsAverageAge);
+            Console.WriteLine("Kittens average age is: {0}", kittensAverageAge);
+            Console.WriteLine("Tomcats average age is: {0}", tomcatsAverageAge);
         }
     }
 }
