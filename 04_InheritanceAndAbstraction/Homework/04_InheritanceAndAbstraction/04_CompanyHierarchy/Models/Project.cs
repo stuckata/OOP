@@ -15,6 +15,13 @@ namespace _04_CompanyHierarchy.Models
         private string details;
         private StateType.State state;
 
+        public Project(string projectName, DateTime projectStartDate, string details, StateType.State state)
+        {
+            this.ProjectName = projectName;
+            this.ProjectStartDate = projectStartDate;
+            this.Details = details;
+            this.State = state;
+        }
 
         public string ProjectName
         {
@@ -66,7 +73,7 @@ namespace _04_CompanyHierarchy.Models
 
         public void CloseProject()
         {
-            throw new NotImplementedException();
+            this.state = StateType.State.Closed;
         }
     }
 }

@@ -9,26 +9,26 @@ using _04_CompanyHierarchy.Models;
 
 namespace _04_CompanyHierarchy.Models
 {
-    class SalesEmployee : RegularEmployee, ISalesEmployee
+    class Developer : RegularEmployee, IDeveloper
     {
-        private List<Sale> sales;
+        private List<Project> projects;
 
-        public SalesEmployee(string id, string firstName, string lastName, decimal salary,
-            DepartmentType.Department department, List<Sale> sales)
+        public Developer(string id, string firstName, string lastName, decimal salary,
+            DepartmentType.Department department, List<Project> projects)
                 : base(id, firstName, lastName, salary, department)
         {
-            this.Sales = sales;
+            this.Projects = projects;
         }
 
-        public List<Sale> Sales
+        public List<Project> Projects
         {
             get
             {
-                return this.sales;
+                return this.projects;
             }
             set
             {
-                this.sales = value;
+                this.projects = value;
             }
         }
     }

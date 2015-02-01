@@ -7,17 +7,28 @@ using _04_CompanyHierarchy.Enumerations;
 
 namespace _04_CompanyHierarchy.Interfaces
 {
-    interface IEmployee
+    interface IProject
     {
-        decimal Salary
+        string ProjectName
         {
             get;
             set;
         }
-        DepartmentType.Department Department
+        DateTime ProjectStartDate
         {
             get;
             set;
         }
+        string Details
+        {
+            get;
+            set;
+        }
+        StateType.State State
+        {
+            get;
+            set;
+        }
+        void CloseProject();
     }
 }

@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _04_CompanyHierarchy.Models;
 
 namespace _04_CompanyHierarchy.Interfaces
 {
-    interface IManager
+    interface ISale
     {
-        List<Employee> Employees
+        string ProductName
+        {
+            get;
+            set;
+        }
+        DateTime Date
+        {
+            get;
+            set;
+        }
+        decimal Price
         {
             get;
             set;

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompanyHierarchyTest.cs" />
+    <Compile Include="Interfaces\ISale.cs" />
+    <Compile Include="Interfaces\ISalesEmployee.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Enumerations\DepartmentType.cs" />
     <Compile Include="Models\Developer.cs" />

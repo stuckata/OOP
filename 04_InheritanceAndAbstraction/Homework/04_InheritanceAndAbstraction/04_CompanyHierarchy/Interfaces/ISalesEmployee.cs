@@ -7,9 +7,9 @@ using _04_CompanyHierarchy.Models;
 
 namespace _04_CompanyHierarchy.Interfaces
 {
-    interface IManager
+    interface ISalesEmployee
     {
-        List<Employee> Employees
+        List<Sale> Sales
         {
             get;
             set;
