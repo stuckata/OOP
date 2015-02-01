@@ -27,6 +27,7 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertMinValue(value, 0, "Net Purchase Amount");
                 this.netPurchaseAmount = value;
             }
         }

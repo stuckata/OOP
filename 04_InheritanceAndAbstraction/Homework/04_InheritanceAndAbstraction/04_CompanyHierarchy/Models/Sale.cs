@@ -28,6 +28,8 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "Product Name");
+                Validators.AssertStringSize(value, 1, "Product Name");
                 this.productName = value;
             }
         }
@@ -52,6 +54,7 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertMinValue(value, 0, "Price");
                 this.price = value;
             }
         }

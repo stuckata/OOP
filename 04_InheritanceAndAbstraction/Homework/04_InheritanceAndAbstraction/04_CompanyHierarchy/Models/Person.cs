@@ -28,6 +28,7 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "ID");
                 this.id = value;
             }
         }
@@ -40,6 +41,8 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "First Name");
+                Validators.AssertStringSize(value, 2, "First Name");
                 this.firstName = value;
             }
         }
@@ -52,6 +55,8 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "Last Name");
+                Validators.AssertStringSize(value, 2, "Last Name");
                 this.lastName = value;
             }
         }

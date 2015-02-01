@@ -31,6 +31,8 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "Project Name");
+                Validators.AssertStringSize(value, 1, "Project Name");
                 this.projectName = value;
             }
         }
@@ -55,6 +57,7 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertNotEmpty(value, "Details");
                 this.details = value;
             }
         }

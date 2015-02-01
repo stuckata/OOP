@@ -29,6 +29,7 @@ namespace _04_CompanyHierarchy.Models
             }
             set
             {
+                Validators.AssertMinValue(value, 0, "Salary");
                 this.salary = value;
             }
         }
