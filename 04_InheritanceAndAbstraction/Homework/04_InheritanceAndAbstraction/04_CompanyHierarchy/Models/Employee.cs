@@ -44,5 +44,15 @@ namespace _04_CompanyHierarchy.Models
                 this.department = value;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(base.ToString());
+            string employeeData = String.Format("***Employee Data*** Salary: {0}; Department: {1}", 
+                this.Salary, this.Department);
+            result.AppendLine(employeeData);
+            return result.ToString();
+        }
     }
 }

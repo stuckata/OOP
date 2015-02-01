@@ -55,5 +55,11 @@ namespace _04_CompanyHierarchy.Models
                 this.lastName = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("***Perosnal Data*** ID: {0}; First Name: {1}, Last Name: {2}", 
+                this.Id, this.FirstName, this.LastName);
+        }
     }
 }

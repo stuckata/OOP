@@ -16,5 +16,10 @@ namespace _04_CompanyHierarchy.Models
                 : base(id, firstName, lastName, salary, department)
         {
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

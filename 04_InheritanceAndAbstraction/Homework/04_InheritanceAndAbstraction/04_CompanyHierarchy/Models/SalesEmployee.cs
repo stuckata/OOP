@@ -31,5 +31,19 @@ namespace _04_CompanyHierarchy.Models
                 this.sales = value;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(base.ToString());
+            string employeePosition = String.Format("***Sales Employee*** List of Sales:");
+            result.AppendLine(employeePosition);
+
+            foreach (var sale in this.Sales)
+            {
+                result.AppendLine(sale.ToString());
+            }
+            return result.ToString();
+        }
     }
 }
