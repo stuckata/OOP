@@ -50,7 +50,7 @@ namespace _04_CompanyHierarchy.Models
         {
             StringBuilder result = new StringBuilder();
             result.AppendLine(base.ToString());
-            string employeeData = String.Format("***Employee Data*** Salary: {0}; Department: {1}", 
+            string employeeData = String.Format("***Employee Data*** Salary: ${0}; Department: {1}", 
                 this.Salary, this.Department);
             result.AppendLine(employeeData);
             return result.ToString();

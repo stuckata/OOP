@@ -35,9 +35,11 @@ namespace _04_CompanyHierarchy.Models
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
+            string separator = "------------------------------------------------------------";
             result.AppendLine(base.ToString());
             string employeePosition = String.Format("***Sales Employee*** Sales:");
             result.AppendLine(employeePosition);
+            result.AppendLine(separator);
 
             foreach (var sale in this.Sales)
             {

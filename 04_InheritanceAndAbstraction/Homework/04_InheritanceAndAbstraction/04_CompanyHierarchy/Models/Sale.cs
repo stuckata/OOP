@@ -61,7 +61,7 @@ namespace _04_CompanyHierarchy.Models
 
         public override string ToString()
         {
-            return String.Format("SALE: Product: {0}; Date: {1}; Price: {2}",
+            return String.Format("SALE: Product: {0}; Date: {1}; Price: ${2}",
                 this.ProductName, this.Date, this.Price);
         }
     }
