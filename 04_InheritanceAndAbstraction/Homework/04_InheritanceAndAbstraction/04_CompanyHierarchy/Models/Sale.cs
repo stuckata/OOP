@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04_CompanyHierarchy
+namespace _04_CompanyHierarchy.Models
 {
     class Sale
     {

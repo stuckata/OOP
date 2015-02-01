@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04_CompanyHierarchy
+namespace _04_CompanyHierarchy.Interfaces
 {
-    class StateType
+    interface ICustomer
     {
-        public enum State
+        decimal NetPurchaseAmount
         {
-            Open,
-            Closed
-        };
+            get;
+            set;
+        }
     }
 }

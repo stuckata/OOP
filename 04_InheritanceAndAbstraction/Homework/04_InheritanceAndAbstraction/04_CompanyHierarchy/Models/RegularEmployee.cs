@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04_CompanyHierarchy
+namespace _04_CompanyHierarchy.Models
 {
-    class SalesEmplyee
+    abstract class RegularEmployee
     {
-        private List<Sale> sales;
+
     }
 }
