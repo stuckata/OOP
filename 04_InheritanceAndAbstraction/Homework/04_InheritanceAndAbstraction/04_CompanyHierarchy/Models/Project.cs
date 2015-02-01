@@ -75,5 +75,11 @@ namespace _04_CompanyHierarchy.Models
         {
             this.state = StateType.State.Closed;
         }
+
+        public override string ToString()
+        {
+            return String.Format("PROJECT: Name: {0}; Start Date: {1}; Details: {2}; State: {3}", 
+                this.ProjectName, this.ProjectStartDate, this.Details, this.State);
+        }
     }
 }

@@ -30,5 +30,14 @@ namespace _04_CompanyHierarchy.Models
                 this.netPurchaseAmount = value;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(base.ToString());
+            string customerData = String.Format("***Customer*** Net Purchase Amount: {0}", this.NetPurchaseAmount);
+            result.AppendLine(customerData);
+            return result.ToString();
+        }
     }
 }

@@ -31,5 +31,18 @@ namespace _04_CompanyHierarchy.Models
                 this.projects = value;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(base.ToString());
+            string employeePosition = String.Format("***Developer*** Projects:");
+            result.AppendLine(employeePosition);
+            foreach (var project in this.Projects)
+            {
+                result.AppendLine(project.ToString());
+            }
+            return result.ToString();
+        }
     }
 }

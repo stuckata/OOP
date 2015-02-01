@@ -36,7 +36,7 @@ namespace _04_CompanyHierarchy.Models
         {
             StringBuilder result = new StringBuilder();
             result.AppendLine(base.ToString());
-            string employeePosition = String.Format("***Manager*** List of Employees:");
+            string employeePosition = String.Format("***Manager*** Employees:");
             result.AppendLine(employeePosition);
 
             foreach (var employee in this.Employees)
