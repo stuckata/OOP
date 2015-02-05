@@ -31,7 +31,7 @@ namespace _02_BankOfKurtovoKonare.Accounts
 
         public override string ToString()
         {
-            return String.Format("Deposit Account | {0} | Calculated Interest: {1}", 
+            return String.Format("Deposit Account | {0} | Balance with interest: ${1}", 
                 base.ToString(), CalculateInterest());
         }
     }
