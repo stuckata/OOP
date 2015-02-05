@@ -8,6 +8,6 @@ namespace _02_BankOfKurtovoKonare.Interfaces
 {
     interface IDeposit
     {
-        decimal DepositMoney();
+        decimal DepositMoney(decimal deposit);
     }
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace _02_BankOfKurtovoKonare.Customers
 {
-    class Person
+    class Person : Customer
     {
+        public Person(string name)
+            : base(name)
+        {
+        }
+
+        public override string ToString()
+        {
+            return String.Format("Customer -- Person | {0}", base.ToString());
+        }
     }
 }
