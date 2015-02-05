@@ -17,6 +17,15 @@ namespace _01_Shapes
             this.Height = height;
         }
 
+        public BasicShape(double height)
+        {
+            this.Height = height;
+        }
+
+        public BasicShape()
+        {
+        }
+
         public double Width 
         {
             get 
@@ -41,8 +50,13 @@ namespace _01_Shapes
             }
         }
 
-        public abstract void CalculateArea();
+        public abstract double CalculateArea();
 
-        public abstract void CalculatePerimeter();
+        public abstract double CalculatePerimeter();
+
+        public override string ToString()
+        {
+            return String.Format("Area: {0} | Perimeter: {1}", CalculateArea(), CalculatePerimeter());
+        }
     }
 }

@@ -13,14 +13,21 @@ namespace _01_Shapes
         {
         }
 
-        public override void CalculateArea()
+        public override double CalculateArea()
         {
-            throw new NotImplementedException();
+            double area = this.Width * this.Height;
+            return area;
         }
 
-        public override void CalculatePerimeter()
+        public override double CalculatePerimeter()
         {
-            throw new NotImplementedException();
+            double perimeter = this.Width * 2 + this.Height * 2;
+            return perimeter;
+        }
+
+        public override string ToString()
+        {
+            return String.Format("Rectangle | {0}", base.ToString());
         }
     }
 }

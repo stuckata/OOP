@@ -10,14 +10,14 @@ namespace _01_Shapes
     {
         private double sideA;
         private double sideB;
-        public double TriangleBase;
+        private double sideC;
 
-        public Triangle(double triangleBase, double height, double sideA, double sideB)
-            : base(triangleBase, height)
+        public Triangle(double height, double sideA, double sideB, double sideC)
+            : base(height)
         {
             this.SideA = sideA;
             this.SideB = sideB;
-            this.TriangleBase = triangleBase;
+            this.SideB = sideC;
         }
 
         public double SideA
@@ -44,14 +44,33 @@ namespace _01_Shapes
             }
         }
 
-        public override void CalculateArea()
+        public double SideC
         {
-            double area = this.SideA + this.SideB + this.TriangleBase;
+            get
+            {
+                return this.sideC;
+            }
+            set
+            {
+                this.sideC = value;
+            }
         }
 
-        public override void CalculatePerimeter()
+        public override double CalculateArea()
         {
-            throw new NotImplementedException();
+            double area = this.SideA * this.Height / 2;
+            return area;
+        }
+
+        public override double CalculatePerimeter()
+        {
+            double perimeter = this.SideA + this.SideB + this.sideC;
+            return perimeter;
+        }
+
+        public override string ToString()
+        {
+            return String.Format("Triangle | {0}", base.ToString());
         }
     }
 }

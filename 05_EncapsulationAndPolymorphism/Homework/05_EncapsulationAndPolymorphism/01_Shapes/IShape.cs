@@ -8,7 +8,7 @@ namespace _01_Shapes
 {
     interface IShape
     {
-        void CalculateArea();
-        void CalculatePerimeter();
+        double CalculateArea();
+        double CalculatePerimeter();
     }
 }
