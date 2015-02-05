@@ -56,7 +56,7 @@ namespace _01_Shapes
 
         public override string ToString()
         {
-            return String.Format("Area: {0} | Perimeter: {1}", CalculateArea(), CalculatePerimeter());
+            return String.Format("Area: {0} | Perimeter: {1} |", CalculateArea(), CalculatePerimeter());
         }
     }
 }

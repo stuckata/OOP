@@ -20,6 +20,7 @@ namespace _01_Shapes
             foreach (var shape in shapes)
             {
                 Console.WriteLine(shape);
+                Console.WriteLine("-----------------------------------------------------------------------");
             }
         }
     }

@@ -41,7 +41,7 @@ namespace _01_Shapes
 
         public override string ToString()
         {
-            return String.Format("Circle | {0}", base.ToString());
+            return String.Format("| Circle | {0}", base.ToString());
         }
     }
 }
