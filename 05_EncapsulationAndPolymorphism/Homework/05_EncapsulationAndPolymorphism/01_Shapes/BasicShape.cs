@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _01_Shapes
 {
-    class BasicShape : IShape
+    abstract class BasicShape : IShape
     {
         private double width;
         private double height;
