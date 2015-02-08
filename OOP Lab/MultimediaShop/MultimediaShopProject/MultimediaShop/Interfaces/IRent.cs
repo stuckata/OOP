@@ -11,7 +11,7 @@ namespace MultimediaShop.Interfaces
     interface IRent
     {
         Item RentItem { get; set; }
-        EnumRent.State RentState { get; set; }
+        RentStateType RentState { get; set; }
         DateTime DateOfRent { get; set; }
         DateTime DeadlineDate { get; set; }
         DateTime DateOfReturn { get; set; }

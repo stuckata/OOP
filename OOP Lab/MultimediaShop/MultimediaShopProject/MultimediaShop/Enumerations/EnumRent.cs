@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultimediaShop.Enumerations
 {
-    public class EnumRent
+    public enum RentStateType
     {
-        public enum State
-        {
-            Returned,
-            Overdue
-        };
-    }
+        Returned,
+        Overdue
+    };
 }

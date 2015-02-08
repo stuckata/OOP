@@ -44,6 +44,7 @@
     <Compile Include="Engine\RentManager.cs" />
     <Compile Include="Engine\SaleManager.cs" />
     <Compile Include="Engine\ShopEngine.cs" />
+    <Compile Include="Enumerations\EnumAge.cs" />
     <Compile Include="Enumerations\EnumRent.cs" />
     <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IRent.cs" />
@@ -51,7 +52,7 @@
     <Compile Include="Items\Book.cs" />
     <Compile Include="Items\Game.cs" />
     <Compile Include="Items\Item.cs" />
-    <Compile Include="Items\Movie.cs" />
+    <Compile Include="Items\Video.cs" />
     <Compile Include="Items\Rent.cs" />
     <Compile Include="Items\Sale.cs" />
     <Compile Include="Items\Validators.cs" />

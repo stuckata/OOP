@@ -7,14 +7,14 @@ using MultimediaShop.Interfaces;
 
 namespace MultimediaShop.Items
 {
-    class Item : IItem
+    abstract class Item : IItem
     {
-        private Dictionary<string, List<Item>> genres;
+        private List<string> genres;
         private string id;
         private decimal price;
         private string title;
 
-        public Item(Dictionary<string, List<Item>> genres, string id, decimal price, string title)
+        public Item(List<string> genres, string id, decimal price, string title)
         {
             this.Genres = genres;
             this.Id = id;
@@ -22,7 +22,14 @@ namespace MultimediaShop.Items
             this.Title = title;
         }
 
-        public Dictionary<string, List<Item>> Genres
+        public Item(string id, decimal price, string title)
+        {
+            this.Id = id;
+            this.Price = price;
+            this.Title = title;
+        }
+
+        public List<string> Genres
         {
             get
             {

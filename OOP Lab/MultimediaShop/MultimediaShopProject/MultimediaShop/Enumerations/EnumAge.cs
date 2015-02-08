@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MultimediaShop.Items
+namespace MultimediaShop.Enumerations
 {
-    class Movie
+    public enum AgeRestrictionTypes
     {
-    }
+        Minor,
+        Teen,
+        Adult
+    };
 }

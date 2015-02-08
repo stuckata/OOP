@@ -12,6 +12,6 @@ namespace MultimediaShop.Interfaces
         string Id { get; set; }
         string Title { get; set; }
         decimal Price { get; set; }
-        Dictionary<string, List<Item>> Genres { get; set; }
+        List<string> Genres { get; set; }
     }
 }

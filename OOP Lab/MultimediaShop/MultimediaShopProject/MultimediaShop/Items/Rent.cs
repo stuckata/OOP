@@ -14,10 +14,10 @@ namespace MultimediaShop.Items
         private DateTime dateOfReturn;
         private DateTime deadlineDate;
         private Item rentItem;
-        private EnumRent.State rentState;
+        private RentStateType rentState;
 
         public Rent(DateTime dateOfRent, DateTime dateOfReturn, DateTime deadlineDate, 
-            Item rentItem, EnumRent.State rentState)
+            Item rentItem, RentStateType rentState)
         {
             this.DateOfRent = dateOfRent;
             this.DateOfReturn = dateOfReturn;
@@ -75,7 +75,7 @@ namespace MultimediaShop.Items
             }
         }
 
-        public EnumRent.State RentState
+        public RentStateType RentState
         {
             get
             {
