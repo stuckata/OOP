@@ -12,10 +12,16 @@ namespace MultimediaShop.Items
         private DateTime dateOfPurchase;
         private Item saleItem;
 
-        public Sale(DateTime dateOfPurchase, Item saleItem)
+        public Sale(Item saleItem, DateTime dateOfPurchase)
         {
-            this.DateOfPurchase = dateOfPurchase;
             this.SaleItem = saleItem;
+            this.DateOfPurchase = dateOfPurchase;         
+        }
+
+        public Sale(Item saleItem)
+        {
+            this.SaleItem = saleItem;
+            this.DateOfPurchase = DateTime.Now;
         }
 
         public DateTime DateOfPurchase
