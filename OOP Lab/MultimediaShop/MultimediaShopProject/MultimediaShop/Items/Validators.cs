@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MultimediaShop.Items
 {
-    static class Validators
+    public static class Validators
     {
-        static void AssertStringIsValid(string value, int minLength, string propertyName)
+        public static void AssertStringIsValid(string value, int minLength, string propertyName)
         {
             if (string.IsNullOrEmpty(value))
             {
@@ -26,6 +26,14 @@ namespace MultimediaShop.Items
             if (value <= minValue)
             {
                 throw new ArgumentOutOfRangeException(propName + " cannot be less or equal to " + minValue);
+            }
+        }
+
+        public static void AssertObjectIsNotNull(object value, string propertyName)
+        {
+            if (value == null)
+            {
+                throw new ArgumentNullException(propertyName + " should not be null!");
             }
         }
     }

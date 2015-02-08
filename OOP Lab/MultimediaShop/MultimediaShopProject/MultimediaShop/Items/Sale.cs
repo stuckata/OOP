@@ -38,6 +38,7 @@ namespace MultimediaShop.Items
             }
             set
             {
+                Validators.AssertObjectIsNotNull(value, "Sale Item");
                 this.saleItem = value;
             }
         }

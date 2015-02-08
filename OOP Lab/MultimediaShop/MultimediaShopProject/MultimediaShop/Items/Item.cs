@@ -42,6 +42,7 @@ namespace MultimediaShop.Items
             }
             set
             {
+                Validators.AssertStringIsValid(value, 4, "Id");
                 this.id = value;
             }
         }
@@ -54,6 +55,7 @@ namespace MultimediaShop.Items
             }
             set
             {
+                Validators.AssertMinValue(value, 0, "Price");
                 this.price = value;
             }
         }
@@ -66,6 +68,7 @@ namespace MultimediaShop.Items
             }
             set
             {
+                Validators.AssertStringIsValid(value, 1, "Title");
                 this.title = value;
             }
         }
