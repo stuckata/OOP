@@ -53,28 +53,9 @@ namespace _03_GenericList
             }
         }
 
-        private void DoubleCapacity()
-        {
-            T[] oldElements = new T[this.Capacity];
-            Array.Copy(elements, oldElements, this.Capacity);
-            int oldCapacity = this.Capacity;
-            this.Capacity *= 2;
-            elements = new T[this.Capacity];
-            Array.Copy(oldElements, elements, oldCapacity);
-        }
-
-        private void AssertIndexIsInListRange(int index)
-        {
-            if (index >= elements.Length)
-            {
-                throw new IndexOutOfRangeException(String.Format(
-                    "The index {0} is out of range for this list.", index));
-            }
-        }
-
         public void Add(T element)
         {
-            if (count == elements.Length)
+            if (this.Count == elements.Length)
             {
                 DoubleCapacity();
             }
@@ -96,11 +77,88 @@ namespace _03_GenericList
             count--;
         }
 
+        public void Clear()
+        {
+            this.Capacity = DEFAULT_CAPACITY;
+            elements = new T[this.Capacity];
+            this.count = 0;
+        }
+
+        public int Find(T value)
+        {
+            if (value == null)
+            {
+                return -1;
+            }
+
+            for (int i = 0; i < elements.Length; i++)
+            {
+                if (value.Equals(elements[i]))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        public bool Contains(T value)
+        {
+            return Find(value) != -1;
+        }
+
         public T Access(int index)
         {
             AssertIndexIsInListRange(index);
+            return this.elements[index];
+        }
 
+        public void Insert(T element, int index)
+        {
+            if (index >= this.Count)
+            {
+                Add(element);
+            } else
+            {
+                if (this.Count == elements.Length)
+                {
+                    DoubleCapacity();
+                }
 
+                T currentValue = elements[index];
+                elements[index] = element;
+
+                if (currentValue != null)
+                {
+                    index++;
+                    Insert(currentValue, index);
+                }
+            }
+        }
+
+        private void DoubleCapacity()
+        {
+            T[] oldElements = new T[this.Capacity];
+            Array.Copy(elements, oldElements, this.Capacity);
+            int oldCapacity = this.Capacity;
+            this.Capacity *= 2;
+            elements = new T[this.Capacity];
+            Array.Copy(oldElements, elements, oldCapacity);
+        }
+
+        private void AssertIndexIsInListRange(int index)
+        {
+            if (index >= this.Count || index < 0)
+            {
+                throw new IndexOutOfRangeException(String.Format(
+                    "The index {0} is out of range for this list.", index));
+            }
+        }
+
+        public override string ToString()
+        {
+            string result = String.Join(", ", elements);
+
+            return result;
         }
     }
 }
