@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 public class GenericList<T> 
 {
+
+    List<int> test = new List<int>();
 	const int DefaultCapacity = 4096;
 
 	private T[] elements;
