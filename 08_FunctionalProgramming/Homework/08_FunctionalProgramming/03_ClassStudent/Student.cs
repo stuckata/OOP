@@ -111,5 +111,11 @@ namespace _03_ClassStudent
                 this.marks = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format(
+                "STUDENT: {0} {1} | AGE: {2} | FAC. NUMBER: {3} | PHONE: {4} | EMAIL: {5} | MARKS: {5}", this.FirstName, this.LastName, this.Age, this.FacultyNumber, this.Phone, this.Email, this.Marks);
+        }
     }
 }
