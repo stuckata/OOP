@@ -9,6 +9,7 @@ namespace _01_StringBuilderExtensionMethods
 {
     public static class StringBuilderExtensionMethods
     {
+        //The method Substring throw System.ArgumentOutOfRangeException if the range is not valid.
         public static string Substring(this StringBuilder stringBuilder,int startIndex, int length)
         {
             return stringBuilder.ToString(startIndex, length);
