@@ -15,9 +15,10 @@ namespace _03_ClassStudent
         private string phone;
         private string email;
         private IList<int> marks;
+        private string groupNumber;
 
         public Student(string firstName, string lastName, int age, string facultyNumber, 
-            string phone, string email, IList<int> marks)
+            string phone, string email, IList<int> marks, string groupNumber)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -26,6 +27,7 @@ namespace _03_ClassStudent
             this.Phone = phone;
             this.Email = email;
             this.Marks = marks;
+            this.GroupNumber = groupNumber;
         }
 
         public string FirstName
@@ -112,10 +114,23 @@ namespace _03_ClassStudent
             }
         }
 
+        public string GroupNumber
+        {
+            get
+            {
+                return this.groupNumber;
+            }
+            set
+            {
+                this.groupNumber = value;
+            }
+        }
+
         public override string ToString()
         {
             return String.Format(
-                "STUDENT: {0} {1} | AGE: {2} | FAC. NUMBER: {3} | PHONE: {4} | EMAIL: {5} | MARKS: {5}", this.FirstName, this.LastName, this.Age, this.FacultyNumber, this.Phone, this.Email, this.Marks);
+                "STUDENT: {0} {1} | AGE: {2} | FAC. NUMBER: {3} | PHONE: {4} | EMAIL: {5} | MARKS: [ {6} ] | GROUP: {7}", this.FirstName, this.LastName, this.Age, this.FacultyNumber, this.Phone, this.Email, 
+                  string.Join(", ", this.Marks), this.GroupNumber);
         }
     }
 }
