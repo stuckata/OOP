@@ -7,7 +7,7 @@ using _03_ClassStudent;
 
 namespace _05_StudentsByFirstAndLastName
 {
-    class StudentsByFirstAndLastName
+    public class StudentsByFirstAndLastName
     {
         static void Main(string[] args)
         {

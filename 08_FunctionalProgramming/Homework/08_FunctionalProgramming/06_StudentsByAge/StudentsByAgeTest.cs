@@ -7,7 +7,7 @@ using _03_ClassStudent;
 
 namespace _06_StudentsByAge
 {
-    class StudentsByAgeTest
+    public class StudentsByAgeTest
     {
         static void Main(string[] args)
         {

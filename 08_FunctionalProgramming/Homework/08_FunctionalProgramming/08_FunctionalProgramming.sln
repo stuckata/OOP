@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_StudentsByFirstAndLastNa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_StudentsByAge", "06_StudentsByAge\06_StudentsByAge.csproj", "{1FCDA27C-5D9C-44DE-A9C5-CFFFCF891C05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_SortStudents", "07_SortStudents\07_SortStudents.csproj", "{B2CAE198-D2BA-44E6-A025-36FC94054D92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1FCDA27C-5D9C-44DE-A9C5-CFFFCF891C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FCDA27C-5D9C-44DE-A9C5-CFFFCF891C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FCDA27C-5D9C-44DE-A9C5-CFFFCF891C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2CAE198-D2BA-44E6-A025-36FC94054D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CAE198-D2BA-44E6-A025-36FC94054D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CAE198-D2BA-44E6-A025-36FC94054D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CAE198-D2BA-44E6-A025-36FC94054D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
