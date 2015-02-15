@@ -15,7 +15,7 @@ namespace _11_WeakStudents
 
             IEnumerable<Student> studentsQuery =
                 from student in students
-                where student.Marks.Contains(new List<int> { 2, 2 })
+                where student.Marks.Count(m => m == 2) > 1  
                 select student;
 
             Console.WriteLine("STUDENTS WITH AT LEAST ONE EXCELLENT MARK (6): ");

@@ -22,7 +22,7 @@ namespace _03_ClassStudent
                 new Student("Sauron", "Unnamed", 26, "666", "06123546", new MailAddress("sauron@mordormail.md"),
                 new List<int> { 2, 3, 4, 2 }, "6"),
                 new Student("Elrond", "Earendil", 23, "007", "04888888", new MailAddress("elrond@rivendell.me"),
-                new List<int> { 2, 3, 4, 2 }, "3"),
+                new List<int> { 5, 4, 4, 6 }, "3"),
                 new Student("Aragorn", "Arathorn", 22, "846", "+3598435487", new MailAddress("theking@gondor.gr"),
                 new List<int> { 6, 6, 5, 6 }, "3"),
             };
