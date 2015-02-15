@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_StudentsByGroups", "13_S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_StudentsJoinedToSpecialties", "14_StudentsJoinedToSpecialties\14_StudentsJoinedToSpecialties.csproj", "{77EE5470-B52A-49A2-948D-DE9640823DF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_CustomLinqExtensionMethods", "02_CustomLinqExtensionMethods\02_CustomLinqExtensionMethods.csproj", "{8D8324F6-E0D7-4A5B-A340-5C78D1E43584}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{77EE5470-B52A-49A2-948D-DE9640823DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77EE5470-B52A-49A2-948D-DE9640823DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77EE5470-B52A-49A2-948D-DE9640823DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8324F6-E0D7-4A5B-A340-5C78D1E43584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8324F6-E0D7-4A5B-A340-5C78D1E43584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8324F6-E0D7-4A5B-A340-5C78D1E43584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8324F6-E0D7-4A5B-A340-5C78D1E43584}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

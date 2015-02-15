@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_02_CustomLinqExtensionMethods</RootNamespace>
-    <AssemblyName>_02_CustomLinqExtensionMethods</AssemblyName>
+    <AssemblyName>02_CustomLinqExtensionMethods</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="CustomLinqExtensionMethodsTest.cs" />
+    <Compile Include="LinqExtensionMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
