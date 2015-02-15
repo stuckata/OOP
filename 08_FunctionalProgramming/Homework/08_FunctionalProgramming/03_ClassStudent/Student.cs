@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Mail;
 
 namespace _03_ClassStudent
 {
@@ -13,12 +14,12 @@ namespace _03_ClassStudent
         private int age;
         private string facultyNumber;
         private string phone;
-        private string email;
+        private MailAddress email;
         private IList<int> marks;
         private string groupNumber;
 
         public Student(string firstName, string lastName, int age, string facultyNumber, 
-            string phone, string email, IList<int> marks, string groupNumber)
+            string phone, MailAddress email, IList<int> marks, string groupNumber)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
@@ -90,7 +91,7 @@ namespace _03_ClassStudent
             }
         }
 
-        public string Email
+        public MailAddress Email
         {
             get
             {

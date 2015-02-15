@@ -7,7 +7,7 @@ using _03_ClassStudent;
 
 namespace _07_SortStudents
 {
-    class SortStudentsTest
+    public class SortStudentsTest
     {
         static void Main(string[] args)
         {
