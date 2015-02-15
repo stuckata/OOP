@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_FilterStudentsByPhone", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_ExcellentStudents", "10_ExcellentStudents\10_ExcellentStudents.csproj", "{53A57008-2080-4B63-85CA-7CC979374C65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_WeakStudents", "11_WeakStudents\11_WeakStudents.csproj", "{266639B9-5D8A-4043-B7CB-67CDCA19D3E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{53A57008-2080-4B63-85CA-7CC979374C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53A57008-2080-4B63-85CA-7CC979374C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53A57008-2080-4B63-85CA-7CC979374C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266639B9-5D8A-4043-B7CB-67CDCA19D3E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266639B9-5D8A-4043-B7CB-67CDCA19D3E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266639B9-5D8A-4043-B7CB-67CDCA19D3E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266639B9-5D8A-4043-B7CB-67CDCA19D3E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
