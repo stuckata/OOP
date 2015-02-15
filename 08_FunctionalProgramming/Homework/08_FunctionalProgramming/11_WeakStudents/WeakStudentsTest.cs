@@ -18,7 +18,7 @@ namespace _11_WeakStudents
                 where student.Marks.Count(m => m == 2) > 1  
                 select student;
 
-            Console.WriteLine("STUDENTS WITH AT LEAST ONE EXCELLENT MARK (6): ");
+            Console.WriteLine("STUDENTS WITH AT LEAST TWO WEAK RESULTS (2): ");
             Console.WriteLine();
 
             foreach (var student in studentsQuery)

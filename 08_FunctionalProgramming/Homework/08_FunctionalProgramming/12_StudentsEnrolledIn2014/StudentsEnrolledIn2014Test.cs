@@ -7,7 +7,7 @@ using _03_ClassStudent;
 
 namespace _12_StudentsEnrolledIn2014
 {
-    class StudentsEnrolledIn2014Test
+    public class StudentsEnrolledIn2014Test
     {
         static void Main(string[] args)
         {
