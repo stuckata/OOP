@@ -149,5 +149,32 @@ namespace _01_Customer
         {
             throw new NotImplementedException();
         }
+
+        public override bool Equals(object obj)
+        {
+            // If parameter is null return false.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            // If parameter cannot be cast to Point return false.
+            Customer customer = obj as Customer;
+            if ((System.Object)customer == null)
+            {
+                return false;
+            }
+
+            // Return true if the fields match:
+            return (this.FirstName == customer.FirstName) && 
+                    (this.MiddleName == customer.MiddleName) && 
+                    (this.LastName == customer.LastName) &&
+                    (this.Id == customer.Id) &&
+                    (this.PermanetAddress == customer.PermanetAddress) &&
+                    (this.PhoneNumber == customer.PhoneNumber) &&
+                    (this.Email == customer.Email) &&
+                    (this.Payments == customer.Payments) &&
+                    (this.Type == customer.Type);
+        }
     }
 }
