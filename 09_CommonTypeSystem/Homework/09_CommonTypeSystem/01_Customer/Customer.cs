@@ -176,5 +176,10 @@ namespace _01_Customer
                     (this.Payments == customer.Payments) &&
                     (this.Type == customer.Type);
         }
+
+        public override int GetHashCode()
+        {
+            return ;
+        }
     }
 }
