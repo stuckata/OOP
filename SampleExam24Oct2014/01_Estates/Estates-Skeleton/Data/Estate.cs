@@ -7,59 +7,33 @@ using Estates.Interfaces;
 
 namespace Estates.Data
 {
-    public class Estate : IEstate
+    public abstract class Estate : IEstate
     {
-        private double area;
-        private bool isFurnished;
-        private string location;
-        private string name;
         private EstateType type;
+        private string name;
+        private double area;
+        private string location;
+        private bool isFurnished;     
 
-        public Estate(double area, bool isFurnished, string location, string name, EstateType type)
+        public Estate(EstateType type, string name, double area, string location, bool isFurnished)
         {
-            this.Area = area;
-            this.IsFurnished = isFurnished;
-            this.Location = location;
-            this.Name = name;
             this.Type = type;
+            this.Name = name;
+            this.Area = area;
+            this.Location = location;
+            this.IsFurnished = isFurnished;        
         }
 
-        public double Area
+        public EstateType Type
         {
             get
             {
-                return this.area;
+                return this.type;
             }
 
             set
             {
-                this.area = value;
-            }
-        }
-
-        public bool IsFurnished
-        {
-            get
-            {
-                return this.isFurnished;
-            }
-
-            set
-            {
-                this.isFurnished = value;
-            }
-        }
-
-        public string Location
-        {
-            get
-            {
-                return this.location;
-            }
-
-            set
-            {
-                this.location = value;
+                this.type = value;
             }
         }
 
@@ -76,17 +50,43 @@ namespace Estates.Data
             }
         }
 
-        public EstateType Type
+        public double Area
         {
             get
             {
-                return this.type;
+                return this.area;
             }
 
             set
             {
-                this.type = value;
+                this.area = value;
             }
         }
+
+        public string Location
+        {
+            get
+            {
+                return this.location;
+            }
+
+            set
+            {
+                this.location = value;
+            }
+        }
+
+        public bool IsFurnished
+        {
+            get
+            {
+                return this.isFurnished;
+            }
+
+            set
+            {
+                this.isFurnished = value;
+            }
+        }     
     }
 }
