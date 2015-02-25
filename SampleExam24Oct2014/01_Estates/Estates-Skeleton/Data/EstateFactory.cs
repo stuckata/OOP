@@ -11,7 +11,7 @@ namespace Estates.Data
             return new EstateEngine();
         }
 
-        public static IEstate CreateEstate(EstateType type, string name, decimal area, string location, bool isFurnitured, int numberOfRooms, bool hasElevator)
+        public static IEstate CreateEstate(EstateType type, string name, double area, string location, bool isFurnitured, int numberOfRooms, bool hasElevator)
         {
             throw new NotImplementedException();
         }

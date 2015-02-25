@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Estates.Data
 {
-    class RentOffer
+    public class RentOffer
     {
     }
 }
