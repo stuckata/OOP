@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Estates.Interfaces;
 
-namespace Estates.Data
+namespace Estates.Data.Estates
 {
     public class Garage : Estate, IGarage
     {
@@ -17,6 +17,10 @@ namespace Estates.Data
         {
             this.Width = width;
             this.Height = height;
+        }
+
+        public Garage()
+        {
         }
 
         public int Width

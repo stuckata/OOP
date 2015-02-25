@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Estates.Interfaces;
 
-namespace Estates.Data
+namespace Estates.Data.Estates
 {
     public abstract class BuildingEstate : Estate, IBuildingEstate
     {
@@ -17,6 +17,10 @@ namespace Estates.Data
         {
             this.Rooms = rooms;
             this.HasElevator = hasElevator;
+        }
+
+        public BuildingEstate()
+        {
         }
 
         public int Rooms

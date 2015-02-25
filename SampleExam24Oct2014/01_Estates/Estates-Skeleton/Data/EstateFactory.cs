@@ -13,8 +13,19 @@ namespace Estates.Data
 
         public static IEstate CreateEstate(EstateType type)
         {
-            Estate estate = new Estate(type);
-            return estate;
+            switch (type)
+            {
+                case EstateType.Apartment:
+                    return new Estates.Apartment();
+                case EstateType.Office:
+                    return new Estates.Office();
+                case EstateType.House:
+                    return new Estates.House();
+                case EstateType.Garage:
+                    return new Estates.Garage();
+                default:
+                    throw new NotSupportedException("No such estate type!");
+            }
         }
 
         public static IOffer CreateOffer(OfferType type)

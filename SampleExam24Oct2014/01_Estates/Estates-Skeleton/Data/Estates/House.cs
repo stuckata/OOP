@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Estates.Interfaces;
 
-namespace Estates.Data
+namespace Estates.Data.Estates
 {
     public class House : Estate, IHouse
     {
@@ -15,6 +15,10 @@ namespace Estates.Data
             : base(type, name, area, location, isFurnished)
         {
             this.Floors = floors;
+        }
+
+        public House()
+        {
         }
 
         public int Floors

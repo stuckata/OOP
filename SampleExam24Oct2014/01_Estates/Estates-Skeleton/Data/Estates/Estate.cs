@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Estates.Interfaces;
 
-namespace Estates.Data
+namespace Estates.Data.Estates
 {
-    public class Estate : IEstate
+    public abstract class Estate : IEstate
     {
         private EstateType type;
         private string name;
@@ -24,9 +24,8 @@ namespace Estates.Data
             this.IsFurnished = isFurnished;        
         }
 
-        public Estate(EstateType type)
+        public Estate()
         {
-            this.Type = type;
         }
 
         public EstateType Type
