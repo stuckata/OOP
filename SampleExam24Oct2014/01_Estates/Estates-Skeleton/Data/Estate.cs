@@ -7,7 +7,7 @@ using Estates.Interfaces;
 
 namespace Estates.Data
 {
-    public abstract class Estate : IEstate
+    public class Estate : IEstate
     {
         private EstateType type;
         private string name;
@@ -22,6 +22,11 @@ namespace Estates.Data
             this.Area = area;
             this.Location = location;
             this.IsFurnished = isFurnished;        
+        }
+
+        public Estate(EstateType type)
+        {
+            this.Type = type;
         }
 
         public EstateType Type

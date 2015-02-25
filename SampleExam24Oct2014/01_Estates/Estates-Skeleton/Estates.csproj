@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Apartment.cs" />
+    <Compile Include="Data\BuildingEstate.cs" />
     <Compile Include="Data\Estate.cs" />
     <Compile Include="Data\EstateFactory.cs" />
     <Compile Include="Data\Garage.cs" />
