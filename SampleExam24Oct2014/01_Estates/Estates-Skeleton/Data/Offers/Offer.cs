@@ -7,7 +7,7 @@ using Estates.Interfaces;
 
 namespace Estates.Data.Offers
 {
-    public class Offer : IOffer
+    public abstract class Offer : IOffer
     {
 
         private OfferType type;

@@ -30,7 +30,15 @@ namespace Estates.Data
 
         public static IOffer CreateOffer(OfferType type)
         {
-            throw new NotImplementedException();
+            switch (type)
+            {
+                case OfferType.Sale:
+                    return new Offers.SaleOffer();
+                case OfferType.Rent:
+                    return new Offers.RentOffer();
+                default:
+                    throw new NotSupportedException("No such offer type!");
+            }
         }
     }
 }
