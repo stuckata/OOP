@@ -41,8 +41,9 @@
     <Compile Include="Data\Estates\Garage.cs" />
     <Compile Include="Data\Estates\House.cs" />
     <Compile Include="Data\Estates\Office.cs" />
-    <Compile Include="Data\RentOffer.cs" />
-    <Compile Include="Data\SaleOffer.cs" />
+    <Compile Include="Data\Offers\Offer.cs" />
+    <Compile Include="Data\Offers\RentOffer.cs" />
+    <Compile Include="Data\Offers\SaleOffer.cs" />
     <Compile Include="Engine\EstatesAgency.cs" />
     <Compile Include="Interfaces\IEstateEngine.cs" />
     <Compile Include="Interfaces\EstateType.cs" />
