@@ -32,6 +32,7 @@ namespace Estates.Data.Estates
 
             set
             {
+                Validators.AssertValueIsInRange(value, 0, 500, "Width");
                 this.width = value;
             }
         }
@@ -45,6 +46,7 @@ namespace Estates.Data.Estates
 
             set
             {
+                Validators.AssertValueIsInRange(value, 0, 500, "Height");
                 this.height = value;
             }
         }

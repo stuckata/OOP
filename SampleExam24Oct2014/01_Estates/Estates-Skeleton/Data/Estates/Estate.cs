@@ -63,6 +63,7 @@ namespace Estates.Data.Estates
 
             set
             {
+                Validators.AssertValueIsInRange(value, 0, 10000, "Area");
                 this.area = value;
             }
         }

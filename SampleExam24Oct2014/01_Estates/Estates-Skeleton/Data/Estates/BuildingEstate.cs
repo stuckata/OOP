@@ -32,6 +32,7 @@ namespace Estates.Data.Estates
 
             set
             {
+                Validators.AssertValueIsInRange(value, 0, 20, "Rooms");
                 this.rooms = value;
             }
         }
