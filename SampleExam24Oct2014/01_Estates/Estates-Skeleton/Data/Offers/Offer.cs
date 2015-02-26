@@ -48,5 +48,10 @@ namespace Estates.Data.Offers
                 this.estate = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}: Estate = {1}, Location = {2}", this.Type, this.Estate.Name, this.Estate.Location);
+        }
     }
 }

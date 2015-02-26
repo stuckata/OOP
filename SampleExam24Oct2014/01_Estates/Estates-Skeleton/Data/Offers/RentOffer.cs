@@ -33,5 +33,10 @@ namespace Estates.Data.Offers
                 this.pricePerMonth = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}, Price = {1}", base.ToString(), this.PricePerMonth);
+        }
     }
 }
