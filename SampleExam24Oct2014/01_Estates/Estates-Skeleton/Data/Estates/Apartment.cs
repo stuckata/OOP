@@ -17,5 +17,10 @@ namespace Estates.Data.Estates
         public Apartment()
         {
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

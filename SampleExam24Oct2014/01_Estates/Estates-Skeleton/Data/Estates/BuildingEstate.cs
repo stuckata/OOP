@@ -48,5 +48,10 @@ namespace Estates.Data.Estates
                 this.hasElevator = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}, Rooms: {1}, Elevator: {2}", base.ToString(), this.Rooms, this.HasElevator == true ? "Yes" : "No");
+        }
     }
 }

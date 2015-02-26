@@ -48,5 +48,10 @@ namespace Estates.Data.Estates
                 this.height = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}, Width: {1}, Height: {2}", base.ToString(), this.Width, this.Height);
+        }
     }
 }

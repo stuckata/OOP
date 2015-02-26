@@ -33,5 +33,10 @@ namespace Estates.Data.Estates
                 this.floors = value;
             }
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0}, Floors: {1}", base.ToString(), this.Floors);
+        }
     }
 }
