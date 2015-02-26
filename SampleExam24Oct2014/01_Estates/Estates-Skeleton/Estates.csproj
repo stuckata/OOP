@@ -31,9 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\EngineUpdate.cs" />
     <Compile Include="Data\Estates\Apartment.cs" />
     <Compile Include="Data\Estates\BuildingEstate.cs" />
     <Compile Include="Data\Estates\Estate.cs" />
@@ -44,6 +46,7 @@
     <Compile Include="Data\Offers\Offer.cs" />
     <Compile Include="Data\Offers\RentOffer.cs" />
     <Compile Include="Data\Offers\SaleOffer.cs" />
+    <Compile Include="Data\Validators.cs" />
     <Compile Include="Engine\EstatesAgency.cs" />
     <Compile Include="Interfaces\IEstateEngine.cs" />
     <Compile Include="Interfaces\EstateType.cs" />

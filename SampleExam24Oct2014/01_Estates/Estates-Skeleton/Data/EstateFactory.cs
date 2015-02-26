@@ -8,7 +8,7 @@ namespace Estates.Data
     {
         public static IEstateEngine CreateEstateEngine()
         {
-            return new EstateEngine();
+            return new EngineUpdate();
         }
 
         public static IEstate CreateEstate(EstateType type)

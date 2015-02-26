@@ -36,7 +36,7 @@ namespace Estates.Data.Offers
 
         public override string ToString()
         {
-            return String.Format("{0}, Price = {1}", base.ToString(), this.price);
+            return String.Format("{0}, Price = {1}", base.ToString(), this.Price);
         }
     }
 }

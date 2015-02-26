@@ -168,11 +168,11 @@ namespace Estates.Engine
                     decimal? price = null;
                     if (offer.Type == OfferType.Rent)
                     {
-                        price = ((IRentOffer) offer).PricePerMonth;
+                        price = ((IRentOffer)offer).PricePerMonth;
                     }
                     if (offer.Type == OfferType.Sale)
                     {
-                        price = ((ISaleOffer) offer).Price;
+                        price = ((ISaleOffer)offer).Price;
                     }
                     result.AppendFormat("  [Estate: {0}, Location: {1}",
                         offer.Estate.Name, offer.Estate.Location);
