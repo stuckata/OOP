@@ -19,6 +19,7 @@ namespace Estates.Data.Offers
 
         public RentOffer()
         {
+            this.Type = OfferType.Rent;
         }
 
         public decimal PricePerMonth

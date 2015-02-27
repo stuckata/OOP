@@ -16,6 +16,7 @@ namespace Estates.Data.Estates
 
         public Office()
         {
+            this.Type = EstateType.Office;
         }
 
         public override string ToString()

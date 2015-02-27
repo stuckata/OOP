@@ -19,6 +19,7 @@ namespace Estates.Data.Offers
 
         public SaleOffer()
         {
+            this.Type = OfferType.Sale;
         }
 
         public decimal Price

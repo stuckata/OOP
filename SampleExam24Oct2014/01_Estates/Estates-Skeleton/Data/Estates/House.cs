@@ -19,6 +19,7 @@ namespace Estates.Data.Estates
 
         public House()
         {
+            this.Type = EstateType.House;
         }
 
         public int Floors

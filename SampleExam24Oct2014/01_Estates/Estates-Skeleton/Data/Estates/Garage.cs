@@ -21,6 +21,7 @@ namespace Estates.Data.Estates
 
         public Garage()
         {
+            this.Type = EstateType.Garage;
         }
 
         public int Width
