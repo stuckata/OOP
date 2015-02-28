@@ -18,7 +18,7 @@
             }      
         }
 
-        public void Starve()
+        public virtual void Starve()
         {
             Health -= 1;
         }

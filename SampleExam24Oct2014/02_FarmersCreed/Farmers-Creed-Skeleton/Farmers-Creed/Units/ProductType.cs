@@ -5,6 +5,7 @@
         Grain,
         Tobacco,
         Cherry,
-        Milk
+        Milk,
+        PorkMeat
     }
 }
