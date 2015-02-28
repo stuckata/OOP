@@ -29,9 +29,6 @@ namespace FarmersCreed.Units
             set { throw new NotImplementedException(); }
         }
 
-        public Product GetProduct()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Product GetProduct();
     }
 }

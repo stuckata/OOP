@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Plant : FarmUnit
+    public abstract class Plant : FarmUnit
     {
         private bool hasGrown;
         private int growTime;
@@ -24,17 +24,17 @@
             set { this.growTime = value; }
         }
 
-        public void Water()
+        public virtual void Water()
         {
             Health += 2;
         }
 
-        public void Wither()
+        public virtual void Wither()
         {
             Health -= 1;
         }
 
-        public void Grow()
+        public virtual void Grow()
         {
             this.GrowTime -= 1;
         }
