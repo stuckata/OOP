@@ -4,36 +4,39 @@
 
     public class Plant : FarmUnit
     {
+        private bool hasGrown;
+        private int growTime;
+
         public Plant(string id, int health, int productionQuantity, int growTime)
             : base(id, health, productionQuantity)
         {
-            throw new NotImplementedException();
+            this.GrowTime = growTime;
         }
 
         public bool HasGrown
         {
-            get { throw new NotImplementedException(); }
+            get { return this.hasGrown; }
         }
 
         public int GrowTime
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get { return this.growTime; }
+            set { this.growTime = value; }
         }
 
         public void Water()
         {
-            throw new NotImplementedException();
+            Health += 2;
         }
 
         public void Wither()
         {
-            throw new NotImplementedException();
+            Health -= 1;
         }
 
         public void Grow()
         {
-            throw new NotImplementedException();
+            this.GrowTime -= 1;
         }
     }
 }

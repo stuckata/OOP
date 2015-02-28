@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using FarmersCreed.Interfaces;
 
     public class Farm : GameObject, IFarm
@@ -32,7 +33,14 @@
 
         public void AddProduct(Product product)
         {
-            throw new NotImplementedException();
+            if (products.Any(p => p.Id == product.Id))
+            {
+                product.Quantity++;
+            }
+            else
+            {
+                products.Add(product);
+            }           
         }
 
         public void Exploit(IProductProduceable productProducer)
