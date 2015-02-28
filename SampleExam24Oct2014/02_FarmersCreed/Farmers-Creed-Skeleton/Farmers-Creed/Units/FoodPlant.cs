@@ -11,15 +11,12 @@ namespace FarmersCreed.Units
     {
         public FoodPlant(string id, int health, int productionQuantity, int growTime,
            ProductType productType, FoodType foodType, int healthEffect)
-               : base(id, health, productionQuantity, growTime, productType)
+               : base(id, health, productionQuantity, growTime, productType, foodType, healthEffect)
         {
-            this.FoodType = foodType;
-            this.HealthEffect = healthEffect;
             this.Quantity = productionQuantity;
         }
 
-        public FoodType FoodType { get; set; }
-        public int HealthEffect { get; set; }
+        
         public int Quantity { get; set; }
 
         public override void Water()

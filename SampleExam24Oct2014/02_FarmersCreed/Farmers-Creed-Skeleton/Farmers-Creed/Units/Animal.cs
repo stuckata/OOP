@@ -5,14 +5,22 @@
 
     public abstract class Animal : FarmUnit
     {
-        public Animal(string id, int health, int productionQuantity)
-            : base(id, health, productionQuantity)
+        public Animal(string id, int health, int productionQuantity, ProductType productType, FoodType foodType, int healthEffect)
+            : base(id, health, healthEffect, productionQuantity, productType, foodType)
         {
         }
 
-        public void Eat(IEdible food, int quantity)
+        public virtual void Eat(IEdible food, int quantity)
         {
-            throw new NotImplementedException();
+            if (food.Quantity >= quantity)
+            {
+                food.Quantity -= quantity;
+            }      
+        }
+
+        public void Starve()
+        {
+            Health -= 1;
         }
     }
 }

@@ -4,6 +4,7 @@
     {
         Grain,
         Tobacco,
-        Cherry
+        Cherry,
+        Milk
     }
 }

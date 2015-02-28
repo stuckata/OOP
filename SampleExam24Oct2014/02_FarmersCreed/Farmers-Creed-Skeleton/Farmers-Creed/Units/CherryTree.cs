@@ -18,14 +18,5 @@ namespace FarmersCreed.Units
                   ProductType.Cherry, FoodType.Organic, CHERRY_TREE_HEALTH_EFFECT)
         {
         }
-
-        public override Product GetProduct()
-        {
-            if (IsAlive)
-            {
-                return new Product(Id, ProductType, ProductionQuantity);
-            }
-            return null;
-        }
     }
 }

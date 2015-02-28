@@ -7,14 +7,17 @@
         private bool hasGrown;
         private int growTime;
 
-        public Plant(string id, int health, int productionQuantity, int growTime, ProductType productType)
-            : base(id, health, productionQuantity)
+        public Plant(string id, int health, int productionQuantity, int growTime, ProductType productType, FoodType foodType, int healthEffect)
+            : base(id, health, healthEffect, productionQuantity, productType, foodType)
         {
             this.GrowTime = growTime;
-            this.ProductType = productType;
         }
 
-        public ProductType ProductType { get; set; }
+        public Plant(string id, int health, int productionQuantity, int growTime, ProductType productType)
+           : base(id, health, 0, productionQuantity, productType)
+        {
+            this.GrowTime = growTime;
+        }
 
         public bool HasGrown
         {
@@ -50,7 +53,5 @@
             }
             return null;
         }
-
-
     }
 }
