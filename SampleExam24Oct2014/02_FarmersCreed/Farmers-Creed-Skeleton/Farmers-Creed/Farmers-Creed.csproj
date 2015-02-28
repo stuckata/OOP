@@ -59,6 +59,7 @@
     <Compile Include="Units\ProductType.cs" />
     <Compile Include="Units\Product.cs" />
     <Compile Include="FarmersCreedMain.cs" />
+    <Compile Include="Units\Swine.cs" />
     <Compile Include="Units\TobaccoPlant.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -7,55 +7,62 @@
 
     public class Farm : GameObject, IFarm
     {
-        private List<Plant> plants;
-        private List<Animal> animals;
-        private List<Product> products;
-
         public Farm(string id)
             : base(id)
         {
         }
 
-        public List<Plant> Plants
-        {
-            get { return this.plants; }
-        }
+        public List<Plant> Plants { get; }
 
-        public List<Animal> Animals
-        {
-            get { return this.animals; }
-        }
+        public List<Animal> Animals { get; }
 
-        public List<Product> Products
-        {
-            get { return this.products; }
-        }
+        public List<Product> Products { get; }
 
         public void AddProduct(Product product)
         {
-            if (products.Any(p => p.Id == product.Id))
+            if (this.Products.Any(p => p.Id == product.Id))
             {
                 product.Quantity++;
             }
             else
             {
-                products.Add(product);
+                this.Products.Add(product);
             }           
+        }
+
+        public void AddCherryTree(string id)
+        {
+            this.Plants.Add(new CherryTree(id));
+        }
+
+        public void AddTobaccoPlant(string id)
+        {
+            this.Plants.Add(new TobaccoPlant(id));
+        }
+
+        public void AddCow(string id)
+        {
+            this.Animals.Add(new Cow(id));
+        }
+
+        public void AddSwine(string id)
+        {
+            this.Animals.Add(new Swine(id));
         }
 
         public void Exploit(IProductProduceable productProducer)
         {
-            throw new NotImplementedException();
+            productProducer.GetProduct();
         }
 
         public void Feed(Animal animal, IEdible edibleProduct, int productQuantity)
         {
-            throw new NotImplementedException();
+            animal.Eat(edibleProduct, productQuantity);
         }
 
         public void Water(Plant plant)
         {
-            throw new NotImplementedException();
+            plant.Water();
         }
 
         public void UpdateFarmState()
