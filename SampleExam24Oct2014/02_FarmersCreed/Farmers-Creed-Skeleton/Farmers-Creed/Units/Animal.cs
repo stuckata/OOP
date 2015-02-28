@@ -3,7 +3,7 @@
     using System;
     using FarmersCreed.Interfaces;
 
-    public class Animal : FarmUnit
+    public abstract class Animal : FarmUnit
     {
         public Animal(string id, int health, int productionQuantity)
             : base(id, health, productionQuantity)

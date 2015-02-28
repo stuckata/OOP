@@ -3,6 +3,7 @@
     public enum ProductType
     {
         Grain,
-        Tobacco
+        Tobacco,
+        Cherry
     }
 }

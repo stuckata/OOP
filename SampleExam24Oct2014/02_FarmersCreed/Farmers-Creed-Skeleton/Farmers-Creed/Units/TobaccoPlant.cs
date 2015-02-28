@@ -13,22 +13,13 @@ namespace FarmersCreed.Units
         private const int PRODUCTION_QUANTITY = 10;
 
         public TobaccoPlant(string id)
-            : base(id, TOBACCO_HEALTH, PRODUCTION_QUANTITY, TOBACCO_GROWTIME)
+            : base(id, TOBACCO_HEALTH, PRODUCTION_QUANTITY, TOBACCO_GROWTIME, ProductType.Tobacco)
         {           
         }
 
         public override void Grow()
         {
             this.GrowTime -= 2;
-        }
-
-        public override Product GetProduct()
-        {
-            if (HasGrown && IsAlive)
-            {
-                return new Product(Id, ProductType.Tobacco, ProductionQuantity);
-            }
-            return null;
         }
     }
 }
