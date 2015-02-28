@@ -67,8 +67,19 @@
 
         public void UpdateFarmState()
         {
-            // TODO: Process all animal and plant behavior
-            throw new NotImplementedException();
+            foreach (var animal in this.Animals)
+            {
+                animal.Starve();
+            }
+
+            foreach (var plant in this.Plants)
+            {
+                plant.Grow();
+                if (plant.HasGrown)
+                {
+                    plant.Wither();
+                }
+            }
         }
     }
 }
