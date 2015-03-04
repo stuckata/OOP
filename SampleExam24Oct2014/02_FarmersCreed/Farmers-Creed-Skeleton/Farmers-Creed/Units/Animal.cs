@@ -22,5 +22,10 @@
         {
             Health -= 1;
         }
+
+        public override string ToString()
+        {
+            return String.Format("{0} {1}", this.GetType().ToString().ToUpper() ,this.Id);
+        }
     }
 }

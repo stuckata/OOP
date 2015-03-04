@@ -39,5 +39,11 @@ namespace FarmersCreed.Units
                 Health -= food.HealthEffect * quantity;
             }
         }
+
+        public override string ToString()
+        {
+            string cowHealth = this.Health >= 0 ? "Health: " + this.Health : "DEAD";
+            return String.Format("{0}, {1}", base.ToString(), cowHealth);
+        }
     }
 }
